@@ -1,11 +1,11 @@
 # Hugo frais
 
-A fresh and french theme for [Hugo](//gohugo.io/) which i'll use for my personal website (blog and portfolio): olivierfredon.com
-
 **/!\ Please note that this is a Work In Progress theme**
 
+A fresh and french theme for [Hugo](//gohugo.io/) which i'll use for my personal website (blog and portfolio): olivierfredon.com
+
 Recipe for a good theme:
-- **light**: minimum viable dependencies)
+- **light**: minimum viable dependencies
 - **responsive**: mobile-first is not an option
 - **accessible**: a11y is quality
 - **SVG**: ligt + responsive + accessibility = Epic win
