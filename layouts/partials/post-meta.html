@@ -1,0 +1,18 @@
+<div class="post-meta">
+    <section class="post-meta__date">
+        <time datetime="{{ .Date.Format "02 January 2006" }}">{{ .Date.Format "02 January 2006" }}</time>
+    </section>
+    <section class="post-meta__tags">
+        {{ range .Params.tags }}
+        <a href="{{ $.Site.BaseURL }}tags/{{ . }}">{{ . }} </a>
+        {{ end }}
+    </section>
+    <section class="post-meta__categories">
+        {{ range .Params.categories }}
+        <a href="{{ .Site.BaseURL }}/categories/{{ . | urlize }}">{{ . }}</a>
+        {{ end }}
+    </section>
+</div>
+
+<meta itemprop="datePublished" content="{{ .Date.Format "02 January 2006" }}">
+<meta itemprop="url" content="{{ .Permalink }}">

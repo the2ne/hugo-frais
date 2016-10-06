@@ -1,0 +1,8 @@
+author = "Olivier Fredon"
+name = "Hugo frais"
+description = "A fresh and french theme"
+license = "MIT"
+licenselink = "https://github.com/the2ne/hugo-frais/blob/master/LICENSE.md"
+version = "0.0.0"
+source_repo = "https://github.com/the2ne/hugo-frais"
+tags = ["blog", "portfolio", "responsive"]

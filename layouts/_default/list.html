@@ -1,0 +1,18 @@
+{{ partial "head" . }}
+
+<body class="list-template">
+
+    {{ partial "header" . }}
+    {{ partial "navigation" . }}
+
+    <main class="content" role="main">
+		{{ partial "post-list" . }}
+        {{ partial "pagination" . }}
+    </main>
+
+    {{ partial "social" . }}
+    {{ partial "footer" . }}
+    {{ partial "konami" . }}
+
+</body>
+</html>

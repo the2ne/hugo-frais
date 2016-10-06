@@ -1,0 +1,24 @@
+{{ partial "head" . }}
+
+<body class="post-template" itemscope itemtype="http://schema.org/Article">
+
+    {{ partial "header" . }}
+    {{ partial "navigation" . }}
+
+    <main class="content" role="main">
+        <article class="post">
+            <header>
+            <h1 class="post-title" itemprop="name">{{ .Title }}</h1>
+
+            <section class="post-content" itemprop="articleBody">
+                {{ .Content }}
+            </section>
+        </article>
+    </main>
+
+    {{ partial "social" . }}
+    {{ partial "footer" . }}
+    {{ partial "konami" . }}
+
+</body>
+</html>
