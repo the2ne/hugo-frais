@@ -1,0 +1,38 @@
+      ___           ___           ___           ___           ___           ___
+     /__/\         /__/\         /__/\         /  /\         /__/\         /  /\
+     \  \:\        \  \:\       |  |::\       /  /::\        \  \:\       /  /:/_
+      \__\:\        \  \:\      |  |:|:\     /  /:/\:\        \  \:\     /  /:/ /\
+  ___ /  /::\   ___  \  \:\   __|__|:|\:\   /  /:/~/::\   _____\__\:\   /  /:/ /::\
+ /__/\  /:/\:\ /__/\  \__\:\ /__/::::| \:\ /__/:/ /:/\:\ /__/::::::::\ /__/:/ /:/\:\
+ \  \:\/:/__\/ \  \:\ /  /:/ \  \:\~~\__\/ \  \:\/:/__\/ \  \:\~~\~~\/ \  \:\/:/~/:/
+  \  \::/       \  \:\  /:/   \  \:\        \  \::/       \  \:\  ~~~   \  \::/ /:/
+   \  \:\        \  \:\/:/     \  \:\        \  \:\        \  \:\        \__\/ /:/
+    \  \:\        \  \::/       \  \:\        \  \:\        \  \:\         /__/:/
+     \__\/         \__\/         \__\/         \__\/         \__\/         \__\/
+
+
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+    OneManTeam: Olivier Fredon
+    Site: http://www.olivierfredon.com
+    Twitter: @the2ne
+    Location: Dirty South, France
+
+# THANKS
+
+    Name: My mom, my dad and my wonderful wife
+
+# TECHNOLOGY COLOPHON
+
+    HTML5, CSS3, SVG
+    Sass, Node, Git
+    Photoshop, Illustrator
+
+# SITE
+
+	Language: English / French / Japanese
+	Doctype: HTML5
+	IDE: Atom

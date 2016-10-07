@@ -1,0 +1,22 @@
+{
+  "name": "olivierfredon.com",
+  "version": "0.0.0",
+  "description": "Hugo Frais is pretty cool but without SASS he can't be alive!",
+  "main": "style.css",
+  "scripts": {
+
+    "build": "npm run sass-build && npm run postcss-build && npm run minify",
+    "minify": "cssnano --sourcemap style.css style.css",
+    "test": "npm run sass-test",
+    "watch": "nodemon -e scss -x \"npm run sass-build\"",
+
+    "sass-test": "stylelint \"sass/**/*.scss\" --syntax scss",
+    "sass-build": "node-sass --indent-width 4 --source-map true --output ./ --output-style compressed ./sass/core.scss ./css/style.css",
+    "postcss-build": "postcss -c postcss.json",
+    "postcss-test": "stylelint style.css"
+
+  },
+  "author": "Olivier Fredon",
+  "license": "UNLICENSED",
+  "private": true
+}

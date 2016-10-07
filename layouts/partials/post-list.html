@@ -6,7 +6,7 @@
         <div class="post__meta"><time datetime="{{ .Date.Format "02 January 2006" }}">{{ .Date.Format "02 January 2006" }}</time></div>
     </header>
     <section class="post__excerpt">
-        <p>{{ .Description | markdownify }}&hellip;</p>
+        <p>{{ .Summary }}&hellip;</p>
         <p class="readmore"><a href="{{ .Permalink }}">{{ .Site.Params.keepReadingStr }}</a></p>
     </section>
 </article>

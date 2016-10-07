@@ -1,0 +1,18 @@
+.site {
+  background: url(../images/bg-small.jpg) no-repeat center center fixed $dark;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+
+.site.gradius {
+  background-image: url(../images/bg-42-large.jpg);
+}
+
+// Ressource from http://www.nasa.gov/image-feature/jpl/pia21042/farewell-to-murray-buttes
+// Image Credit: NASA/JPL-Caltech/MSSS
+
+// Glitch effect on 404
+// https://github.com/snorpey/jpg-glitch
