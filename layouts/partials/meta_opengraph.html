@@ -1,7 +1,7 @@
 <!-- Opengraph -->
 <meta property="og:locale" content="{{ .Site.LanguageCode }}">
 <meta property="og:title" content="{{ .Title }}" />
-<meta property="og:description" content="{{ .Description }}" />
+<meta property="og:description" content="{{ if .IsHome}}{{ .Site.Params.description }}{{ else }}{{ .Description }}{{ end }}" />
 <meta property="og:site_name" content="{{ .Site.Title }}" />
 <meta property="og:url" content="{{ .Permalink }}" />
 
