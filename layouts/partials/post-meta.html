@@ -4,7 +4,7 @@
     </section>
     <section class="post-meta__tags">
         {{ range .Params.tags }}
-        <a href="{{ $.Site.BaseURL }}tags/{{ . }}">{{ . }} </a>
+        <a href="{{ .Site.BaseURL }}tags/{{ . }}">{{ . }} </a>
         {{ end }}
     </section>
     <section class="post-meta__categories">
