@@ -1,25 +1,34 @@
 {{ partial "head" . }}
 
-<body class="post-template" itemscope itemtype="http://schema.org/Article">
+<body class="post-template">
+    <div class="page">
 
-    {{ partial "header" . }}
-    {{ partial "navigation" . }}
+        <div class"wrapper">
+            {{ partial "header" . }}
+        </div>
 
-    <main class="content" role="main" id="contenu-principal">
-        <article class="post">
-            <header>
-                <h1 class="post-title" itemprop="name" role="heading" arial-level="1">{{ .Title }}</h1>
-            </header>
+        {{ partial "navigation" . }}
 
-            <section class="post-content" itemprop="articleBody">
-                {{ .Content }}
-            </section>
-            {{ partial "post-meta" . }}
-        </article>
-    </main>
+        <main class="content wrapper" role="main" id="contenu-principal" itemscope itemtype="http://schema.org/Article">
+            <article class="post">
+                <header>
+                    <h1 class="post-title" itemprop="name" role="heading" arial-level="1">{{ .Title }}</h1>
+                </header>
 
-    {{ partial "social" . }}
-    {{ partial "footer" . }}
+                <section class="post-content" itemprop="articleBody">
+                    {{ .Content }}
+                </section>
+                {{ partial "post-meta" . }}
+            </article>
+        </main>
+
+        <div class"wrapper">
+            {{ partial "social" . }}
+            {{ partial "footer" . }}
+        </div>
+
+    </div>
+
     {{ partial "konami" . }}
 
 </body>
