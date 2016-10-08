@@ -14,9 +14,10 @@
             <section class="post-content" itemprop="articleBody">
                 {{ .Content }}
             </section>
+            {{ partial "post-meta" . }}
         </article>
     </main>
-    {{ partial "pagination" . }}
+
     {{ partial "social" . }}
     {{ partial "footer" . }}
     {{ partial "konami" . }}
