@@ -1,6 +1,8 @@
 <header class="headlines" itemscope itemtype="http://schema.org/Person" role="banner">
     <h1 class="headlines__title"  itemprop="name">
-        <a href="/" title="Retourner à l'accueil" itemprop="email"><span itemprop="givenName">Olivier</span> <span itemprop="familyName"> Fredon</span></a>
+        {{ if .IsHome }}<a href="/" title="Retourner à l'accueil">{{ end }}
+            <span itemprop="givenName">Olivier</span> <span itemprop="familyName"> Fredon</span>
+        {{ if .IsHome }}</a>{{ end }}
     </h1>
     <h2 class="headlines__baseline" itemprop="jobTitle" lang="en">UI Designer &amp; <wbr>Front-End Developer</h2>
 </header>
