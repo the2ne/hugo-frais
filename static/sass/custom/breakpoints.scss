@@ -10,11 +10,11 @@
 @media screen and (min-width: 40em) {
     // background for large medium
     .site {
-      background-image: url(../images/bg-medium.jpg);
+      background-image: url("/img/bg-medium.jpg");
     }
-    .site.gradius {
-      background-image: url(../images/bg-42-medium.jpg);
-    }
+    // .site.gradius {
+    //   background-image: url("/img/bg-42-medium.jpg");
+    // }
 
     //Headlines
     .title {
@@ -29,9 +29,9 @@
 @media screen and (min-width: 60em) {
     // background for large screen
     .site {
-      background-image: url(../images/bg-large.jpg);
+      background-image: url("/img/bg-large.jpg");
     }
-    .site.gradius {
-      background-image: url(../images/bg-42-large.jpg);
-    }
+    // .site.gradius {
+    //   background-image: url("/img/bg-42-large.jpg");
+    // }
 }

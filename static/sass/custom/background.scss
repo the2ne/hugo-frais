@@ -1,5 +1,5 @@
-.site {
-  background: url(../images/bg-small.jpg) no-repeat center center fixed $dark;
+body {
+  background: url("/img/bg-small.jpg") no-repeat center center fixed $dark;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -7,9 +7,9 @@
 }
 
 
-.site.gradius {
-  background-image: url(../images/bg-42-large.jpg);
-}
+// .site.gradius {
+//   background-image: url(../images/bg-42-large.jpg);
+// }
 
 // Ressource from http://www.nasa.gov/image-feature/jpl/pia21042/farewell-to-murray-buttes
 // Image Credit: NASA/JPL-Caltech/MSSS
