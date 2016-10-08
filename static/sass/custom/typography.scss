@@ -3,7 +3,7 @@ html {
     font-size: 1em;
 }
 
-.title {
+.headlines__title {
     @include _background-opacity($black);
     display: inline-block;
     font-size: $fontSize * 1.5;
@@ -13,7 +13,7 @@ html {
     padding-right: .25em;
 }
 
-.baseline {
+.headlines__baseline {
     font-family: $fontFamilyAlternative;
     font-size: $fontSize;
     font-weight: normal;
