@@ -1,13 +1,13 @@
 <!-- Opengraph -->
-<meta property="og:locale" content="{{ .LanguageCode }}">
+<meta property="og:locale" content="{{ .Site.languageCode }}">
 <meta property="og:title" content="{{ .Title }}" />
 <meta property="og:description" content="{{ .Description }}" />
-<meta property="og:site_name" content="{{ .Site.Title }}" />
+<meta property="og:site_name" content="{{ .Site.title }}" />
 <meta property="og:url" content="{{ .Permalink }}" />
 
 {{ if eq .Url "/" }}
 <meta property="og:type" content="website" />
-<meta property="og:image" content="{{ .Site.BaseUrl }}/media/facebook-og.jpg" />
+<meta property="og:image" content="{{ .Site.baseUrl }}/media/facebook-og.jpg" />
 <meta property="og:image:type" content="image/jpeg" />
 {{ end }}
 

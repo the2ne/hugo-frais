@@ -1,14 +1,14 @@
 <!doctype html>
-<html class="no-js" lang="{{ with .Site.LanguageCode }}{{ . }}{{ else }}fr{{ end }}" prefix="og: http://ogp.me/ns#">
+<html class="no-js" lang="{{ with .Site.languageCode }}{{ . }}{{ else }}fr{{ end }}" prefix="og: http://ogp.me/ns#">
 <head>
     <meta charset="utf-8">
-    <title>{{ if .IsHome }}{{ .Title }}{{ else }}{{ .Title }} | {{ .Site.Title }}{{ end }}</title>
+    <title>{{ if .IsHome }}{{ .Title }}{{ else }}{{ .Title }} | {{ .Site.title }}{{ end }}</title>
 
     {{ partial "meta.html" . }}
     {{ partial "meta_opengraph.html" . }}
     {{ partial "meta_twittercard.html" . }}
 
-    <base href="{{ .Site.BaseURL }}">
+    <base href="{{ .Site.baseUrl }}">
     <link rel="canonical" href="{{ .Permalink }}">
     {{ if .RSSlink }}<link href="{{ .RSSlink }}" rel="alternate" type="application/rss+xml" title="{{ .Title }}" />{{ end }}
 

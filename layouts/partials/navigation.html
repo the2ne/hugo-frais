@@ -1,5 +1,5 @@
 {{ if .Site.Menus.main }}
-<nav class="menu" role="navigation id="menu-principal" aria-label="menu principal">
+<nav class="menu" role="navigation" id="menu-principal" aria-label="menu principal">
     <ul class="menu__wrapper">
         {{ range .Site.Menus.main }}
         <li class="nav nav-current"><a href="{{.URL}}">{{ .Name }}</a></li>
