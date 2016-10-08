@@ -1,17 +1,26 @@
 {{ partial "head" . }}
 
 <body class="home-template">
+    <div class="page">
 
-    {{ partial "header" . }}
-    {{ partial "navigation" . }}
+        <div class"wrapper">
+            {{ partial "header" . }}
+        </div>
 
-    <main class="content" role="main" id="contenu-principal">
-        {{ partial "post-list" . }}
-        {{ partial "pagination" . }}
-    </main>
+        {{ partial "navigation" . }}
 
-    {{ partial "social" . }}
-    {{ partial "footer" . }}
+        <main class="content wrapper" role="main" id="contenu-principal">
+            {{ partial "post-list" . }}
+            {{ partial "pagination" . }}
+        </main>
+
+        <div class"wrapper">
+            {{ partial "social" . }}
+            {{ partial "footer" . }}
+        </div>
+
+    </div>
+
     {{ partial "konami" . }}
 
 </body>
