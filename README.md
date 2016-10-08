@@ -8,7 +8,7 @@ Recipe for a good theme:
 - **light**: minimum viable dependencies
 - **responsive**: mobile-first is not an option
 - **accessible**: a11y is quality
-- **SVG**: ligt + responsive + accessibility = Epic win
+- **SVG**: light + responsive + accessibility = Epic win
 - **consistent**: maintainability is king
 - **customizable**: make it yours
 - ...
