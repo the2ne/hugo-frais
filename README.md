@@ -34,7 +34,7 @@ For more information read the official [setup guide](//gohugo.io/overview/instal
 ## Configuration
 
 You can define some social network bullshit like:
-- [params] **name** *str* : the author's website name;
+- [params] **author** *str* : the author's website name;
 - [params] **pseudo** *str* : the author's online pseudonym;
 - [params] **twitter** *str* : Twitter account;
 - [params] **github** *str* : GitHub account;
@@ -42,8 +42,8 @@ You can define some social network bullshit like:
 
 _./config.toml example:_
 ```toml
-[author]
-    name = "Olivier Fredon"
+[params]
+    author = "Olivier Fredon"
     pseudo = "the2ne"
     twitter = "the2ne"
     github = "the2ne"
