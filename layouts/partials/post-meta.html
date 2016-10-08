@@ -4,12 +4,12 @@
     </section>
     <section class="post-meta__tags">
         {{ range .Params.tags }}
-        <a href="{{ $.Site.baseUrl }}tags/{{ . }}">{{ . }} </a>
+        <a href="{{ $.Site.baseURL }}tags/{{ . }}">{{ . }} </a>
         {{ end }}
     </section>
     <section class="post-meta__categories">
         {{ range .Params.categories }}
-        <a href="{{ .Site.baseUrl }}/categories/{{ . | urlize }}">{{ . }}</a>
+        <a href="{{ .Site.baseURL }}/categories/{{ . | urlize }}">{{ . }}</a>
         {{ end }}
     </section>
     <meta itemprop="url" content="{{ .Permalink }}">
