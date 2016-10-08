@@ -3,21 +3,16 @@
 <body class="list-template">
     <div class="page">
 
-        <div class"wrapper">
-            {{ partial "header" . }}
-        </div>
-
+        {{ partial "header" . }}
         {{ partial "navigation" . }}
 
-        <main class="content wrapper" role="main" id="contenu-principal">
+        <main class="content" role="main" id="contenu-principal">
     		{{ partial "post-list" . }}
             {{ partial "pagination" . }}
         </main>
 
-        <div class"wrapper">
-            {{ partial "social" . }}
-            {{ partial "footer" . }}
-        </div>
+        {{ partial "social" . }}
+        {{ partial "footer" . }}
 
     </div>
 

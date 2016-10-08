@@ -3,10 +3,7 @@
 <body class="home-template">
     <div class="page">
 
-        <div class"wrapper">
-            {{ partial "header" . }}
-        </div>
-
+        {{ partial "header" . }}
         {{ partial "navigation" . }}
 
         <main class="content" role="main" id="contenu-principal">
@@ -14,10 +11,8 @@
             {{ partial "pagination" . }}
         </main>
 
-        <div class"wrapper">
-            {{ partial "social" . }}
-            {{ partial "footer" . }}
-        </div>
+        {{ partial "social" . }}
+        {{ partial "footer" . }}
 
     </div>
 
