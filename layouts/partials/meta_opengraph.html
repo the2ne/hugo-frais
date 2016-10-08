@@ -5,9 +5,9 @@
 <meta property="og:site_name" content="{{ .Site.Title }}" />
 <meta property="og:url" content="{{ .Permalink }}" />
 
-{{ if eq .Url "/" }}
+{{ if .IsHome }}
 <meta property="og:type" content="website" />
-<meta property="og:image" content="{{ .Site.BaseUrl }}/media/facebook-og.jpg" />
+<meta property="og:image" content="{{ .Site.BaseURL }}/media/facebook-og.jpg" />
 <meta property="og:image:type" content="image/jpeg" />
 {{ end }}
 

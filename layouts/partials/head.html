@@ -8,7 +8,7 @@
     {{ partial "meta_opengraph.html" . }}
     {{ partial "meta_twittercard.html" . }}
 
-    <base href="{{ .Site.BaseUrl }}">
+    <base href="{{ .Site.BaseURL }}">
     <link rel="canonical" href="{{ .Permalink }}">
     {{ if .RSSlink }}<link href="{{ .RSSlink }}" rel="alternate" type="application/rss+xml" title="{{ .Title }}" />{{ end }}
 
