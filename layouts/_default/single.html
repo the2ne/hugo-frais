@@ -5,10 +5,11 @@
     {{ partial "header" . }}
     {{ partial "navigation" . }}
 
-    <main class="content" role="main">
+    <main class="content" role="main" id="contenu-principal">
         <article class="post">
             <header>
-            <h1 class="post-title" itemprop="name">{{ .Title }}</h1>
+                <h1 class="post-title" itemprop="name" role="heading" arial-level="1">{{ .Title }}</h1>
+            </header>
 
             <section class="post-content" itemprop="articleBody">
                 {{ .Content }}
