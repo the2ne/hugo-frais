@@ -1,7 +1,9 @@
 <footer class="legal" role="contentinfo" itemscope itemtype="http://schema.org/Person">
-    <p  itemprop="name">
-        <span itemprop="givenName">{{ .Site.Params.firstName }}</span>
-        <span itemprop="familyName">{{ .Site.Params.lastName }}</span>
+    <p>
+        <span itemprop="name">
+            <span itemprop="givenName">{{ .Site.Params.firstName }}</span>
+            <span itemprop="familyName">{{ .Site.Params.lastName }}</span>
+        </span>
         · {{ .Date.Format "2006" }} ·
         Merci à <a href="http://gohugo.io" title="Générateur de site static en Go">Hugo</a> <a href="//github>com/the2ne/hugo-frais" title="Theme entièrement créé de mes dix doigts">Frais</a>.
         <em>Les cookies ça fait grossir, alors on s'en passe très bien.</em>

@@ -7,7 +7,9 @@
     </header>
     <section class="post__excerpt">
         <p>{{ .Summary }}&hellip;</p>
-        <p class="readmore"><a href="{{ .Permalink }}">{{ .Site.Params.keepReadingStr }}</a></p>
+        {{ if .Truncated }}
+        <p class="readmore"><a href="{{ .Permalink }}">{{ .Site.Params.keepReading }}</a></p>
+        {{ end }}
     </section>
 </article>
 {{ end }}
