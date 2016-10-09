@@ -1,6 +1,6 @@
 /*
- * Konami-JS ~
- * :: Now with support for touch events and multiple instances for
+ * Konami-JS ~ 
+ * :: Now with support for touch events and multiple instances for 
  * :: those situations that call for multiple easter eggs!
  * Code: https://github.com/snaptortoise/konami-js
  * Examples: http://www.snaptortoise.com/konami-js
@@ -10,7 +10,7 @@
  * Tested in: Safari 4+, Google Chrome 4+, Firefox 3+, IE7+, Mobile Safari 2.2.1 and Dolphin Browser
  */
 
-var Gradius = function (callback) {
+var Konami = function (callback) {
 	var konami = {
 		addEvent: function (obj, type, fn, ref_obj) {
 			if (obj.addEventListener)
