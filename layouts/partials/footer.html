@@ -1,3 +1,17 @@
-<footer class="legal" role="contentinfo">
-    <p>{{ .Site.Params.author }} {{ .Date.Format "2006" }} Merci à <a href="http://gohugo.io" title="Générateur de site static en Go">Hugo</a> <a href="//github>com/the2ne/hugo-frais" title="Theme entièrement créé de mes dix doigts">Frais</a>. <em>Les cookies ça fait grossir, alors on s'en passe très bien.</em></p>
+<footer class="legal" role="contentinfo" itemscope itemtype="http://schema.org/Person">
+    <p  itemprop="name">
+        <span itemprop="givenName">{{ .Site.Params.firstName }}</span>
+        <span itemprop="familyName">{{ .Site.Params.lastName }}</span>
+        · {{ .Date.Format "2006" }} ·
+        Merci à <a href="http://gohugo.io" title="Générateur de site static en Go">Hugo</a> <a href="//github>com/the2ne/hugo-frais" title="Theme entièrement créé de mes dix doigts">Frais</a>.
+        <em>Les cookies ça fait grossir, alors on s'en passe très bien.</em>
+    </p>
+
+    <link itemprop="url" href="{{ .Site.BaseURL }}">
+    <link itemprop="email" href="mailto:hello@olivierfredon.com">
+    <link itemprop="worksFor" href="http://www.jechange.fr">
+    <meta itemprop="jobTitle" content="UI Designer and Front-End Developer">
+    <meta itemprop="additionalName" content="{{ .Site.Params.pseudo }}">
+    <meta itemprop="gender" content="male">
+    <meta itemprop="nationality" content="France">
 </footer>
