@@ -2,14 +2,21 @@
 
 <body class="list-template">
     <div class="page">
+
         {{ partial "header" . }}
         {{ partial "navigation" . }}
+
         <main class="content" role="main" id="contenu-principal">
     		{{ partial "post-list" . }}
             {{ partial "pagination" . }}
         </main>
+
+        {{ partial "social" . }}
         {{ partial "footer" . }}
+
     </div>
+
     {{ partial "js" . }}
+
 </body>
 </html>

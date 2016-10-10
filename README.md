@@ -2,14 +2,14 @@
 
 **/!\ Please note that this is a Work In Progress theme**
 
-A fresh (and french) theme for [Hugo](//gohugo.io/).
+A fresh and french theme for [Hugo](//gohugo.io/) which i'll use for my personal website (blog and portfolio): olivierfredon.com
 
 Recipe for a good theme:
 - **light**: minimum viable dependencies
 - **responsive**: mobile-first is not an option
 - **accessible**: a11y is quality
 - **SVG**: light + responsive + accessibility = Epic win
-- **consistent**: if maintainability is king, BEM is queen
+- **consistent**: maintainability is king
 - **customizable**: make it yours
 - ...
 
@@ -50,6 +50,7 @@ _./config.toml example:_
     linkedin = "the2ne"
 ```
 
+You can add some features with extra partial templates (Do you enjoy Konami Code?.)
 
 ## Contributing
 
@@ -64,4 +65,4 @@ This theme is released under the MIT license. For more information read the [Lic
 ## Annotations
 
 Thanks to:
-- [Steve Francia](//github.com/spf13) for creating Hugo and the awesome community around the project.
+- [Steve Francia](//github.com/spf13) for creating Hugo (and for the shortcodes) and the awesome community around the project.

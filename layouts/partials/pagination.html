@@ -2,13 +2,13 @@
 <nav class="pagination" role="pagination">
     {{ if .Paginator.HasPrev }}
     <section class="pagination__prev">
-        <a class="newer" href="{{ .Paginator.Prev.URL }}" title="{{ .Prev.Title }}">{{.Prev.Title}}</a>
+        <a class="newer" href="{{ .Paginator.Prev.URL }}" title="Article précédent : {{ .Prev.Title }}">{{.Prev.Title}}</a>
     </section>
     {{ end }}
-    <span class="pagination__current">Page {{ .Paginator.PageNumber }} of {{ .Paginator.TotalPages }}</span>
+    <span class="pagination__current">Page {{ .Paginator.PageNumber }} sur {{ .Paginator.TotalPages }}</span>
     {{ if .Paginator.HasNext }}
     <section class="pagination__next">
-        <a class="older" href="{{ .Paginator.Next.URL }}" title="{{ .Next.Title }}">{{.Next.Title}}</a>
+        <a class="older" href="{{ .Paginator.Next.URL }}" title="Article suivant : {{ .Next.Title }}">{{.Next.Title}}</a>
     </section>
     {{ end }}
 </nav>
