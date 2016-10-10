@@ -1,6 +1,9 @@
+////
+/// Global rules
+////
+
 @-ms-viewport { width: device-width; }
 
-/* Activation par défaut du mode `border-box` */
 * {
     @include _border-box();
     &:after, &:before {
@@ -8,107 +11,14 @@
     }
 }
 
-// Améliorations génériques
-
-/* Un peu d'amélioration de rendu */
 img { -ms-interpolation-mode: bicubic; }
 
-// Enrobage global du site
-
-html {
-    height: 100%;
-}
-
-.page {
-    display: table;
-    height: 100%; width: 100%;
-    margin: 0; padding: 0;
-    overflow: hidden;
-    table-layout: fixed;
-    vertical-align: top;
-}
-
-.wrapper {
-    display: table-row;
-
-    .headlines,
-    .external-links {
-        display: table-cell;
-    }
-}
-
-.headlines {
-    font-size: 1.5em;
-    height: 100%;
-    padding-top: 3em;
-    vertical-align: top;
-
-    .headlines__title,
-    .headlines__baseline {
-        margin-left: -10%;
-        padding-left: 20%;
-    }
-
-    @include _origin();
-    @include _rotate();
-}
-
-.external-links {
-    text-align: right;
-    vertical-align: bottom;
-}
-
-.social-networks {
-    display: inline-block;
-    list-style-type: none;
-    margin: 1em 2em;
-    padding: 0;
-
-    > * {
-        display: inline-block;
-    }
-
-    li + li {
-        margin-left: .5em;
-    }
-
-    .svg {
-        fill: $white;
-        fill-rule: evenodd;
-        width: $fontSize * 1.5;
-        height: 100%;
-        transition: fill 1s ease;
-    }
-
-    a:visited .svg {
-        fill: $light;
-    }
-
-    a:hover .svg {
-        fill: $black;
-    }
-}
 
 
-// Crédits
-
-.credits {
-    margin: 1em auto;
-    text-align: center;
-
-    .featured {
-        list-style-type: none;
-        padding-left: 0;
-    }
-}
-
-
-// Liens
+// Links
 
 a {
   color: $light;
-  cursor: pointer;
-  transition: color 1s ease;
 }
 
 a:hover {
@@ -123,18 +33,8 @@ a:active {
   color: $black;
 }
 
-a:link img,
-a:visited img,
-img {
-  border-style: none;
-}
-
-.title a {
-    color: $white;
-    text-decoration: none;
-}
-
 // Helpers
+
 .visua11y-hidden {
     border: 0;
     clip: rect(1px 1px 1px 1px); /* for Internet Explorer */

@@ -1,8 +1,8 @@
 ////
-/// Mixins globaux
+/// Mixins
 ////
 
-/// Permet de basculer un bloc de contenu en mode `border-box`
+/// Render `border-box`
 /// cf. http://caniuse.com/#feat=css3-boxsizing
 @mixin _border-box {
     & {
@@ -12,7 +12,7 @@
     }
 }
 
-/// Permet d'appliquer un `clearfix` à un élément donné.
+/// `clearfix`
 @mixin _clearfix {
     &:before,
     &:after {
@@ -23,50 +23,4 @@
     &:after {
         clear: both;
     }
-}
-
-/// Couleurs de fond avec couche alpha
-@mixin _background-opacity($color, $opacity: 0.5) {
-    background-color: $color; /* The Fallback */
-    background-color: rgba($color, $opacity);
-}
-
-/// Point d'origine pour les transformations CSS (default : center middle)
-@mixin _origin($horizontal: 50%, $vertical: 50%) {
-    -webkit-transform-origin: $horizontal $vertical;
-    -moz-transform-origin:  $horizontal $vertical;
-    -ms-transform-origin:  $horizontal $vertical;
-    -o-transform-origin:  $horizontal $vertical;
-    transform-origin:  $horizontal $vertical;
-}
-
-/// Angle de rotation (default -10)
-@mixin _rotate($deg: -10deg) {
-    -webkit-transform: rotate($deg);
-    -moz-transform: rotate($deg);
-    -ms-transform: rotate($deg);
-    -o-transform: rotate($deg);
-    transform: rotate($deg);
-}
-
-/// eyeCandy
-@mixin _blink($primaryColor: $white, $secondaryColor: $black, $duration: .1s, $count: infinite, $direction: normal) {
-
-    @keyframes blink {
-         from {
-             color: $primaryColor;
-             @include _background-opacity($secondaryColor);
-         }
-         50% {
-             color: $secondaryColor;
-             @include _background-opacity($primaryColor);
-
-         }
-    }
-
-    -webkit-animation: blink $duration $count $direction;
-       -moz-animation: blink $duration $count $direction;
-        -ms-animation: blink $duration $count $direction;
-         -o-animation: blink $duration $count $direction;
-            animation: blink $duration $count $direction;
 }

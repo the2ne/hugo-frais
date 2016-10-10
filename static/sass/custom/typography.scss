@@ -1,28 +1,17 @@
+////
+/// Typography
+////
+
 html {
     color: $white;
-    font-size: 1em;
+    font-size: $fontSize;
 }
 
 .headlines__title {
-    @include _background-opacity($black);
-    display: inline-block;
     font-size: $fontSize * 1.5;
-    font-style: italic;
-    font-weight: bold;
-    margin: 0 0 .15em;
-    padding-right: .25em;
 }
 
 .headlines__baseline {
     font-family: $fontFamilyAlternative;
     font-size: $fontSize;
-    font-weight: normal;
-    margin: 0;
-    white-space: nowrap;
-}
-
-// Eye candy
-.blink,
-.title:hover {
-    @include _blink();
 }

@@ -1,37 +1,13 @@
-// Small breakpoint
-@media screen and (min-width: 21em) {
-    //Headlines
-    .headlines__title {
-        font-size: $fontSize * 1.75;
-    }
-}
+////
+/// Breakpoints
+////
 
 // Medium breakpoint
 @media screen and (min-width: 40em) {
-    // background for large medium
-    body {
-      background-image: url("/img/bg-medium.jpg");
-    }
-    // .gradius {
-    //   background-image: url("/img/bg-42-medium.jpg");
-    // }
 
-    //Headlines
-    .headlines__title {
-        font-size: $fontSize * 3;
-    }
-    .headlines__baseline {
-        font-size: ($fontSize + .063); /* equ 17px */
-    }
 }
 
 // Desktop breakpoint
 @media screen and (min-width: 60em) {
-    // background for large screen
-    body {
-      background-image: url("/img/bg-large.jpg");
-    }
-    // .gradius {
-    //   background-image: url("/img/bg-42-large.jpg");
-    // }
+
 }

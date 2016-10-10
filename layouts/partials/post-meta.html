@@ -1,20 +1,13 @@
 {{ $baseurl := .Site.BaseURL }}
-<footer class="post-meta">
-    <section class="post-meta__date">
-        <time datetime="{{ .Date.Format "2006-01-02" }}" itemprop="datePublished">{{ .Date.Format "02 January 2006" }}</time>
-    </section>
-    <section class="post-meta__tags">
-        {{ range .Params.tags }}
-        <a href="{{ $baseurl }}tags/{{ . }}">{{ . }} </a>
-        {{ end }}
-    </section>
-    <section class="post-meta__categories">
-        {{ range .Params.categories }}
-        <a href="{{ $baseurl }}/categories/{{ . | urlize }}">{{ . }}</a>
-        {{ end }}
-    </section>
-    <meta itemprop="url" content="{{ .Permalink }}">
-    <meta itemprop="author" content="{{ .Site.Params.author }}">
-    <meta itemprop="wordCount" content="{{ .WordCount }}" />
-    <meta itemprop="timeRequired" content="{{ .ReadingTime }} Min" />
-</footer>
+<section class="post-meta__date">
+    <time datetime="{{ .Date.Format "2006-01-02" }}" itemprop="datePublished">{{ .Date.Format "02 January 2006" }}</time>
+</section>
+<section class="post-meta__tags">
+    {{ range .Params.tags }}
+    <a href="{{ $baseurl }}tags/{{ . }}">{{ . }} </a>
+    {{ end }}
+</section>
+<meta itemprop="url" content="{{ .Permalink }}">
+<meta itemprop="author" content="{{ .Site.Params.author }}">
+<meta itemprop="wordCount" content="{{ .WordCount }}" />
+<meta itemprop="timeRequired" content="{{ .ReadingTime }} Min" />
