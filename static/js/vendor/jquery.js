@@ -1,0 +1,3 @@
+/*
+ * jQuery is not mandatory ;-)
+ */

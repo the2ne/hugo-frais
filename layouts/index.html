@@ -2,21 +2,14 @@
 
 <body class="home-template">
     <div class="page">
-
         {{ partial "header" . }}
         {{ partial "navigation" . }}
-
-        <main class="content" role="main" id="contenu-principal">
+        <main class="content" role="main" id="main-content">
             {{ partial "post-list" . }}
             {{ partial "pagination" . }}
         </main>
-
-        {{ partial "social" . }}
         {{ partial "footer" . }}
-
     </div>
-
     {{ partial "js" . }}
-
 </body>
 </html>
