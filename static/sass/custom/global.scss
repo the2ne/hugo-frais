@@ -22,15 +22,15 @@ a {
 }
 
 a:hover {
-  color: $white;
-}
-
-a:focus {
   color: $dark;
 }
 
-a:active {
+a:focus {
   color: $black;
+}
+
+a:active {
+  color: $dark;
 }
 
 // Helpers
