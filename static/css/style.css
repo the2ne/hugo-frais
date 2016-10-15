@@ -429,15 +429,15 @@ a {
 }
 
 a:hover {
-    color: #fff;
-}
-
-a:focus {
     color: #333;
 }
 
-a:active {
+a:focus {
     color: #000;
+}
+
+a:active {
+    color: #333;
 }
 
 .visua11y-hidden {
@@ -453,12 +453,20 @@ a:active {
     overflow: hidden;
 }
 
+html {
+    background-color: #fff;
+}
+
+.page {
+    margin: 0 4em;
+}
+
 .headlines {
     font-size: 1.5em;
 }
 
 html {
-    color: #fff;
+    color: #333;
     font-size: 1em;
 }
 
