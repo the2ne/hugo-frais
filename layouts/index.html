@@ -2,8 +2,10 @@
 
 <body class="home-template">
     <div class="page">
-        {{ partial "header" . }}
-        {{ partial "navigation" . }}
+        <section class="header-wrapper">
+            {{ partial "header" . }}
+            {{ partial "navigation" . }}
+        </section>
         <main class="content" role="main" id="main-content">
             {{ partial "post-list" . }}
             {{ partial "pagination" . }}

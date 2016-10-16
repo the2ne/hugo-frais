@@ -7,14 +7,34 @@ html {
     font-size: $fontSize;
 }
 
+.page {
+    font-size: $fontSize * 1.25;
+}
+
 .headlines__title {
+    font-family: $fontFamily;
     font-size: $fontSize * 1.5;
+    font-weight: bold;
+    margin: 0;
 }
 
 .headlines__baseline {
     font-size: $fontSize;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h3, h5 {
     font-family: $fontFamilyAlternative;
+    line-height: $baseline / 1.5;
 }
+
+h2, h4, h6 {
+    font-family: $fontFamily;
+    line-height: $baseline / 1.5;
+}
+
+h1 { font-size: $fontSize * 4.5; }
+h2 { font-size: $fontSize * 3; }
+h3 { font-size: $fontSize * 2.5; }
+h4 { font-size: $fontSize * 2; }
+h5 { font-size: $fontSize * 1.5; }
+h6 { font-size: $fontSize * 1; }

@@ -5,7 +5,7 @@
  * 3. Prevent adjustments of font size after orientation changes in IE and iOS.
  */
 html {
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: Corbel, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", "Bitstream Vera Sans", "Liberation Sans", Verdana, "Verdana Ref", sans-serif;
     /* 1 */
     line-height: 1.5;
     /* 2 */
@@ -458,11 +458,8 @@ html {
 }
 
 .page {
-    margin: 0 4em;
-}
-
-.headlines {
-    font-size: 1.5em;
+    max-width: 700px;
+    margin: 0 auto;
 }
 
 html {
@@ -470,16 +467,53 @@ html {
     font-size: 1em;
 }
 
+.page {
+    font-size: 1.25em;
+}
+
 .headlines__title {
+    font-family: Corbel, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", "Bitstream Vera Sans", "Liberation Sans", Verdana, "Verdana Ref", sans-serif;
     font-size: 1.5em;
+    font-weight: bold;
+    margin: 0;
 }
 
 .headlines__baseline {
     font-size: 1em;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    font-family: Georgia, Times, Times New Roman, serif;
+h1, h3, h5 {
+    font-family: "Palatino Linotype", Palatino, Palladio, "URW Palladio L", "Book Antiqua", Baskerville, "Bookman Old Style", "Bitstream Charter", "Nimbus Roman No9 L", Garamond, "Apple Garamond", "ITC Garamond Narrow", "New Century Schoolbook", "Century Schoolbook", "Century Schoolbook L", Georgia, serif;
+    line-height: 1;
+}
+
+h2, h4, h6 {
+    font-family: Corbel, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", "Bitstream Vera Sans", "Liberation Sans", Verdana, "Verdana Ref", sans-serif;
+    line-height: 1;
+}
+
+h1 {
+    font-size: 4.5em;
+}
+
+h2 {
+    font-size: 3em;
+}
+
+h3 {
+    font-size: 2.5em;
+}
+
+h4 {
+    font-size: 2em;
+}
+
+h5 {
+    font-size: 1.5em;
+}
+
+h6 {
+    font-size: 1em;
 }
 
 /*# sourceMappingURL=style.css.map */
