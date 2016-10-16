@@ -1,26 +1,24 @@
 {{ partial "head" . }}
 
-<body class="post-template">
-    <div class="page">
-        <section class="header-wrapper">
-            {{ partial "header" . }}
-            {{ partial "navigation" . }}
-        </section>
-        <main class="content" role="main" id="main-content" itemscope itemtype="http://schema.org/Article">
-            <article class="post">
-                <header>
-                    <h1 class="post-title" itemprop="name">{{ .Title }}</h1>
-                </header>
-                <section class="post-content" itemprop="articleBody">
-                    {{ .Content }}
-                </section>
-                <footer class="post-meta">
-                    {{ partial "post-meta" . }}
-                </footer>
-            </article>
-        </main>
-        {{ partial "footer" . }}
-    </div>
+<body class="template template--post">
+    <section class="header-wrapper">
+        {{ partial "header" . }}
+        {{ partial "navigation" . }}
+    </section>
+    <main class="content" role="main" id="main-content" itemscope itemtype="http://schema.org/Article">
+        <article class="post">
+            <header>
+                <h1 class="post-title" itemprop="name">{{ .Title }}</h1>
+            </header>
+            <section class="post-content" itemprop="articleBody">
+                {{ .Content }}
+            </section>
+            <footer class="post-meta">
+                {{ partial "post-meta" . }}
+            </footer>
+        </article>
+    </main>
+    {{ partial "footer" . }}
     {{ partial "js" . }}
 </body>
 </html>

@@ -1,14 +1,24 @@
+{{ $baseurl := .Site.BaseURL }}
 {{ $paginator := .Paginate (where .Data.Pages.ByDate.Reverse "Type" "post") }}
 {{ range $paginator.Pages }}
 <article class="post post--preview">
     <header>
         <h2 class="post__title"><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
-        <div class="post__meta"><time datetime="{{ .Date.Format "02 January 2006" }}">{{ .Date.Format "02 January 2006" }}</time></div>
     </header>
+    <section class="post-meta">
+        <ul class="post-meta__infos">
+            <li class="post-meta__date"><time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "02 January 2006" }}</time></li>
+        </ul>
+        <ul class="post-meta__tags">
+            {{ range .Params.tags }}
+            <li><a href="{{ $baseurl }}tags/{{ . }}">{{ . }} </a></li>
+            {{ end }}
+        </ul>
+    </section>
     <section class="post__excerpt">
         <p>{{ .Summary }}&hellip;</p>
         {{ if .Truncated }}
-        <p class="readmore"><a href="{{ .Permalink }}">{{ .Site.Params.keepReading }}</a></p>
+        <p class="readmore"><a href="{{ .Permalink }}">Read More…</a></p>
         {{ end }}
     </section>
 </article>

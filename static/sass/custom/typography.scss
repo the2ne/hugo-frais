@@ -7,11 +7,12 @@ html {
     font-size: $fontSize;
 }
 
-.page {
+.template {
     font-size: $fontSize * 1.25;
 }
 
 .headline__title {
+    color: $contrast;
     font-family: $fontFamily;
     font-size: $fontSize * 1.5;
     font-weight: bold;

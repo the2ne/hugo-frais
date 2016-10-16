@@ -24,3 +24,9 @@
         clear: both;
     }
 }
+
+/// Background opacity
+@mixin _background-opacity($color, $opacity: 0.5) {
+    background-color: $color; /* The Fallback */
+    background-color: rgba($color, $opacity);
+}

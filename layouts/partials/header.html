@@ -1,6 +1,6 @@
 <header class="headline" role="banner">
     {{ if .IsHome }}
-        <h1 class="headline__title">{{ .Site.Params.headline }}</h1>
+        <span class="headline__title">{{ .Site.Params.headline }}</span>
     {{ else }}
         <a class="headline__title" href="{{ .Site.BaseURL }}">{{ .Site.Params.headline }}</a>
     {{ end }}

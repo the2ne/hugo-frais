@@ -22,6 +22,17 @@ a:hover { color: $shadow; }
 a:focus { color: $base; }
 a:active { color: $light; }
 
+// HTML elements
+
+blockquote {
+    @include _background-opacity($neutral, .3);
+    border-left: 6px solid $neutral;
+    font-size: $fontSize * 1.25;
+    margin-left: 0;
+    margin-right: 0;
+    padding: .5em 1.5em;
+}
+
 // Helpers
 
 .visua11y-hidden {

@@ -8,12 +8,119 @@ html {
 
 .header-wrapper {
     background-color: $neutral;
+    display: table;
+    padding: .5em 1.5em;
+    width: 100%;
+
+    a {
+        text-decoration: none;
+    }
+
+    .headline,
+    .menu {
+        display: table-cell;
+        height: 80px;
+        vertical-align: middle;
+    }
+
+    .headline {
+        text-align: left;
+    }
+
+    .menu {
+        text-align: right;
+    }
 }
 
-.headline,
-.menu,
-.content,
-.legal {
+.menu__items {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+    .item {
+        display: inline-block;
+    }
+
+    .item + .item {
+        margin-left: .5em;
+    }
+
+    .item + .item::before {
+        color: $white;
+        content:"|";
+        display: inline-block;
+        margin-right: .5em;
+    }
+}
+
+.content {
     margin: 0 auto;
-    max-width: 700px;
+    max-width: 40em;
+    padding: 0 1.5em;
+}
+
+.legal {
+    color: $light;
+    text-align: center;
+
+    .credits {
+        border-top: 1px solid $contrast;
+        margin: 2em auto 1em;
+        padding-left: 0;
+        padding-top: 1em;
+        list-style-type: none;
+
+        > * {
+            display: inline-block;
+        }
+
+        li + li {
+            margin-left: .25em;
+        }
+
+        li + li::before {
+            color: $contrast;
+            content:"•";
+            display: inline-block;
+            margin-right: .25em;
+        }
+    }
+}
+
+
+.post-meta {
+    color: $light;
+    display: table;
+    width: 100%;
+
+   [class^=post-meta__] {
+        display: table-cell;
+        vertical-align: middle;
+        margin: 0;
+        padding-left: 0;
+        list-style-type: none;
+
+        > * {
+            display: inline-block;
+        }
+
+        li + li {
+            margin-left: .25em;
+        }
+
+        li + li::before {
+            color: $contrast;
+            content:"•";
+            display: inline-block;
+            margin-right: .25em;
+        }
+    }
+
+    .post-meta__infos {
+        text-align: left;
+    }
+
+    .post-meta__tags {
+        text-align: right;
+    }
 }
