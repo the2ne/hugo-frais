@@ -17,21 +17,10 @@ img { -ms-interpolation-mode: bicubic; }
 
 // Links
 
-a {
-  color: $light;
-}
-
-a:hover {
-  color: $dark;
-}
-
-a:focus {
-  color: $black;
-}
-
-a:active {
-  color: $dark;
-}
+a { color: $contrast; }
+a:hover { color: $shadow; }
+a:focus { color: $base; }
+a:active { color: $light; }
 
 // Helpers
 

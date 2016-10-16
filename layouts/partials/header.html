@@ -1,7 +1,7 @@
-<header class="headlines" role="banner">
+<header class="headline" role="banner">
     {{ if .IsHome }}
-        <h1 class="headlines__title">{{ .Site.Params.headline }}</h1>
+        <h1 class="headline__title">{{ .Site.Params.headline }}</h1>
     {{ else }}
-        <a class="headlines__title" href="{{ .Site.BaseURL }}">{{ .Site.Params.headline }}</a>
+        <a class="headline__title" href="{{ .Site.BaseURL }}">{{ .Site.Params.headline }}</a>
     {{ end }}
 </header>

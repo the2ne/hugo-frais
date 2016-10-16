@@ -425,19 +425,19 @@ img {
 }
 
 a {
-    color: #777;
+    color: #C44741;
 }
 
 a:hover {
-    color: #333;
+    color: #77201C;
 }
 
 a:focus {
-    color: #000;
+    color: #2C343B;
 }
 
 a:active {
-    color: #333;
+    color: #52616D;
 }
 
 .visua11y-hidden {
@@ -454,16 +454,23 @@ a:active {
 }
 
 html {
-    background-color: #fff;
+    background-color: #FFFFFF;
 }
 
-.page {
-    max-width: 700px;
+.header-wrapper {
+    background-color: #E5E1D1;
+}
+
+.headline,
+.menu,
+.content,
+.legal {
     margin: 0 auto;
+    max-width: 700px;
 }
 
 html {
-    color: #333;
+    color: #2C343B;
     font-size: 1em;
 }
 
@@ -471,25 +478,23 @@ html {
     font-size: 1.25em;
 }
 
-.headlines__title {
+.headline__title {
     font-family: Corbel, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", "Bitstream Vera Sans", "Liberation Sans", Verdana, "Verdana Ref", sans-serif;
     font-size: 1.5em;
     font-weight: bold;
     margin: 0;
 }
 
-.headlines__baseline {
-    font-size: 1em;
-}
-
 h1, h3, h5 {
     font-family: "Palatino Linotype", Palatino, Palladio, "URW Palladio L", "Book Antiqua", Baskerville, "Bookman Old Style", "Bitstream Charter", "Nimbus Roman No9 L", Garamond, "Apple Garamond", "ITC Garamond Narrow", "New Century Schoolbook", "Century Schoolbook", "Century Schoolbook L", Georgia, serif;
-    line-height: 1;
+    line-height: 1.2;
+    color: #C44741;
 }
 
 h2, h4, h6 {
     font-family: Corbel, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", "Bitstream Vera Sans", "Liberation Sans", Verdana, "Verdana Ref", sans-serif;
-    line-height: 1;
+    line-height: 1.2;
+    color: #52616D;
 }
 
 h1 {

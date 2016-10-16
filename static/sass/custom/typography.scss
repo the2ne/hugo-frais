@@ -3,7 +3,7 @@
 ////
 
 html {
-    color: $dark;
+    color: $base;
     font-size: $fontSize;
 }
 
@@ -11,25 +11,23 @@ html {
     font-size: $fontSize * 1.25;
 }
 
-.headlines__title {
+.headline__title {
     font-family: $fontFamily;
     font-size: $fontSize * 1.5;
     font-weight: bold;
     margin: 0;
 }
 
-.headlines__baseline {
-    font-size: $fontSize;
-}
-
 h1, h3, h5 {
     font-family: $fontFamilyAlternative;
-    line-height: $baseline / 1.5;
+    line-height: $baseline - .3;
+    color: $contrast;
 }
 
 h2, h4, h6 {
     font-family: $fontFamily;
-    line-height: $baseline / 1.5;
+    line-height: $baseline - .3;
+    color: $light;
 }
 
 h1 { font-size: $fontSize * 4.5; }
