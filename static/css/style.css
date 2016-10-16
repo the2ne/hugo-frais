@@ -494,7 +494,6 @@ html {
 .header-wrapper .headline,
 .header-wrapper .menu {
     display: table-cell;
-    height: 80px;
     vertical-align: middle;
 }
 
@@ -537,6 +536,10 @@ html {
     margin-top: 3em;
 }
 
+.post--preview .post__title {
+    margin-bottom: .25em;
+}
+
 .legal {
     color: #77201C;
     margin-top: 3em;
@@ -547,6 +550,22 @@ html {
     color: #52616D;
     display: table;
     width: 100%;
+}
+
+.post__meta a {
+    color: #52616D;
+}
+
+.post__meta a:hover {
+    color: #2C343B;
+}
+
+.post__meta a:focus {
+    color: #C44741;
+}
+
+.post__meta a:active {
+    color: #77201C;
 }
 
 .post__meta [class^=post__meta__] {
@@ -566,10 +585,10 @@ html {
 }
 
 .post__meta [class^=post__meta__] li + li::before {
-    color: #C44741;
+    color: #52616D;
     content: "•";
     display: inline-block;
-    margin-right: .25em;
+    margin-right: .5em;
 }
 
 .post__meta .post__meta__infos {
@@ -591,10 +610,12 @@ html {
 
 .headline__title {
     color: #C44741;
+    display: block;
     font-family: Corbel, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", "Bitstream Vera Sans", "Liberation Sans", Verdana, "Verdana Ref", sans-serif;
     font-size: 1.5em;
     font-weight: bold;
     margin: 0;
+    padding: .5em 0;
 }
 
 h1, h3, h5 {

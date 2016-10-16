@@ -21,7 +21,6 @@ html {
     .headline,
     .menu {
         display: table-cell;
-        height: 80px;
         vertical-align: middle;
     }
 
@@ -67,6 +66,13 @@ html {
     }
 }
 
+// Post preview
+.post--preview {
+    .post__title {
+        margin-bottom: .25em;
+    }
+}
+
 // Footer
 .legal {
     color: $shadow;
@@ -80,27 +86,32 @@ html {
     display: table;
     width: 100%;
 
-   [class^=post__meta__] {
+    a { color: $light; }
+    a:hover { color: $base; }
+    a:focus { color: $contrast; }
+    a:active { color: $shadow; }
+
+    [class^=post__meta__] {
         display: table-cell;
         vertical-align: middle;
         margin: 0;
         padding-left: 0;
         list-style-type: none;
 
-        > * {
-            display: inline-block;
-        }
+    > * {
+        display: inline-block;
+    }
 
-        li + li {
-            margin-left: .25em;
-        }
+    li + li {
+        margin-left: .25em;
+    }
 
-        li + li::before {
-            color: $contrast;
-            content:"•";
-            display: inline-block;
-            margin-right: .25em;
-        }
+    li + li::before {
+        color: $light;
+        content:"•";
+        display: inline-block;
+        margin-right: .5em;
+    }
     }
 
     .post__meta__infos {
