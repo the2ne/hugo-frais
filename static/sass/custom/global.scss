@@ -33,6 +33,16 @@ blockquote {
     padding: .5em 1.5em;
 }
 
+code {
+    @include _background-opacity($contrast, .1);
+    border-left: 6px solid $contrast;
+    color: $contrast;
+    display: block;
+    margin: 1em 0;
+    padding: .5em 1.5em;
+
+}
+
 // Helpers
 
 .visua11y-hidden {

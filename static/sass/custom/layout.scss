@@ -6,6 +6,8 @@ html {
     background-color: $white;
 }
 
+
+// header
 .header-wrapper {
     background-color: $neutral;
     display: table;
@@ -32,6 +34,7 @@ html {
     }
 }
 
+// Menu
 .menu__items {
     list-style-type: none;
     margin: 0;
@@ -53,47 +56,31 @@ html {
     }
 }
 
+// Content
 .content {
     margin: 0 auto;
     max-width: 40em;
     padding: 0 1.5em;
-}
 
-.legal {
-    color: $light;
-    text-align: center;
-
-    .credits {
-        border-top: 1px solid $contrast;
-        margin: 2em auto 1em;
-        padding-left: 0;
-        padding-top: 1em;
-        list-style-type: none;
-
-        > * {
-            display: inline-block;
-        }
-
-        li + li {
-            margin-left: .25em;
-        }
-
-        li + li::before {
-            color: $contrast;
-            content:"•";
-            display: inline-block;
-            margin-right: .25em;
-        }
+    .post--preview + .post--preview {
+        margin-top: 3em;
     }
 }
 
+// Footer
+.legal {
+    color: $shadow;
+    margin-top: 3em;
+    text-align: center;
+}
 
-.post-meta {
+// Post meta
+.post__meta {
     color: $light;
     display: table;
     width: 100%;
 
-   [class^=post-meta__] {
+   [class^=post__meta__] {
         display: table-cell;
         vertical-align: middle;
         margin: 0;
@@ -116,11 +103,11 @@ html {
         }
     }
 
-    .post-meta__infos {
+    .post__meta__infos {
         text-align: left;
     }
 
-    .post-meta__tags {
+    .post__meta__tags {
         text-align: right;
     }
 }

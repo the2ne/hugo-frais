@@ -1,9 +1,9 @@
 {{ $baseurl := .Site.BaseURL }}
-<ul class="post-meta__infos">
-    <li class="post-meta__author" itemprop="author">{{ .Site.Params.author }}</li>
-    <li class="post-meta__date"><time datetime="{{ .Date.Format "2006-01-02" }}" itemprop="datePublished">{{ .Date.Format "02 January 2006" }}</time></li>
+<ul class="post__meta__infos">
+    <li class="post__meta__author" itemprop="author">{{ .Site.Params.author }}</li>
+    <li class="post__meta__date"><time datetime="{{ .Date.Format "2006-01-02" }}" itemprop="datePublished">{{ .Date.Format "02 January 2006" }}</time></li>
 </ul>
-<ul class="post-meta__tags">
+<ul class="post__meta__tags">
     {{ range .Params.tags }}
     <li><a href="{{ $baseurl }}tags/{{ . }}">{{ . }} </a></li>
     {{ end }}

@@ -12,19 +12,6 @@
     }
 }
 
-/// `clearfix`
-@mixin _clearfix {
-    &:before,
-    &:after {
-        /* clearfix - http://nicolasgallagher.com/micro-clearfix-hack/ */
-        content: " ";
-        display: table;
-    }
-    &:after {
-        clear: both;
-    }
-}
-
 /// Background opacity
 @mixin _background-opacity($color, $opacity: 0.5) {
     background-color: $color; /* The Fallback */
