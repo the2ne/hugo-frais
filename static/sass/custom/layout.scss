@@ -48,10 +48,7 @@ html {
     }
 
     .item + .item::before {
-        color: $white;
-        content:"|";
-        display: inline-block;
-        margin-right: .5em;
+        @include  _separator-before($white, "|");
     }
 }
 
@@ -84,6 +81,7 @@ html {
 .post__meta {
     color: $light;
     display: table;
+    font-style: italic;
     width: 100%;
 
     a { color: $light; }
@@ -98,20 +96,17 @@ html {
         padding-left: 0;
         list-style-type: none;
 
-    > * {
-        display: inline-block;
-    }
+        > * {
+            display: inline-block;
+        }
 
-    li + li {
-        margin-left: .25em;
-    }
+        li + li {
+            margin-left: .25em;
+        }
 
-    li + li::before {
-        color: $light;
-        content:"•";
-        display: inline-block;
-        margin-right: .5em;
-    }
+        li + li::before {
+            @include  _separator-before($light);
+        }
     }
 
     .post__meta__infos {
@@ -120,5 +115,34 @@ html {
 
     .post__meta__tags {
         text-align: right;
+    }
+}
+
+
+// Pagination
+.pagination {
+    color: $light;
+    margin-top: 1.5em;
+    text-align: right;
+
+    .pagination__infos + a {
+        margin-left: .25em;
+    }
+
+    .pagination__current {
+        color: $contrast;
+        font-size: $fontSize * 1.5;
+    }
+
+    .pagination__infos + a::before {
+        @include  _separator-before($neutral);
+    }
+
+    .pagination__prev + .pagination__next {
+        margin-left: .25em;
+    }
+
+    .pagination__prev + .pagination__next::before {
+        @include  _separator-before($neutral, "|");
     }
 }

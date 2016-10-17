@@ -5,6 +5,8 @@
 html {
     color: $base;
     font-size: $fontSize;
+    font-variant-ligatures: common-ligatures;
+    text-rendering: optimizeLegibility;
 }
 
 .template {
