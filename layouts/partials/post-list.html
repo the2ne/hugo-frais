@@ -1,5 +1,5 @@
 {{ $baseurl := .Site.BaseURL }}
-{{ $paginator := .Paginate (where .Data.Pages.ByDate.Reverse "Type" "post") 1 }}
+{{ $paginator := .Paginate (where .Data.Pages.ByDate.Reverse "Type" "post") }}
 {{ range $paginator.Pages }}
 <article class="post post--preview">
     <header>
