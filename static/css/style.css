@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*! normalize.css v4.1.1 | MIT License | github.com/necolas/normalize.css */
 /**
  * 1. Change the default font family in all browsers (opinionated).
@@ -5,7 +6,7 @@
  * 3. Prevent adjustments of font size after orientation changes in IE and iOS.
  */
 html {
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: Corbel, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", "Bitstream Vera Sans", "Liberation Sans", Verdana, "Verdana Ref", sans-serif;
     /* 1 */
     line-height: 1.5;
     /* 2 */
@@ -425,19 +426,41 @@ img {
 }
 
 a {
-    color: #777;
+    color: #C44741;
 }
 
 a:hover {
-    color: #333;
+    color: #77201C;
 }
 
 a:focus {
-    color: #000;
+    color: #2C343B;
 }
 
 a:active {
-    color: #333;
+    color: #52616D;
+}
+
+blockquote {
+    background-color: #E5E1D1;
+    /* The Fallback */
+    background-color: rgba(229, 225, 209, 0.3);
+    border-left: 6px solid #E5E1D1;
+    font-size: 1.25em;
+    margin-left: 0;
+    margin-right: 0;
+    padding: .5em 1.5em;
+}
+
+code {
+    background-color: #C44741;
+    /* The Fallback */
+    background-color: rgba(196, 71, 65, 0.1);
+    border-left: 6px solid #C44741;
+    color: #C44741;
+    display: block;
+    margin: 1em 0;
+    padding: .5em 1.5em;
 }
 
 .visua11y-hidden {
@@ -454,32 +477,235 @@ a:active {
 }
 
 html {
-    background-color: #fff;
+    background-color: #FFFFFF;
 }
 
-.page {
-    margin: 0 4em;
+.header-wrapper {
+    background-color: #E5E1D1;
+    display: table;
+    padding: .5em 1.5em;
+    width: 100%;
 }
 
-.headlines {
+.header-wrapper a {
+    text-decoration: none;
+}
+
+.header-wrapper .headline,
+.header-wrapper .menu {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.header-wrapper .headline {
+    text-align: left;
+}
+
+.header-wrapper .menu {
+    text-align: right;
+}
+
+.menu__items {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu__items .item {
+    display: inline-block;
+}
+
+.menu__items .item + .item {
+    margin-left: .5em;
+}
+
+.menu__items .item + .item::before {
+    color: #FFFFFF;
+    content: "|";
+    display: inline-block;
+    margin-right: 0.5em;
+}
+
+.content {
+    margin: 0 auto;
+    max-width: 40em;
+    padding: 0 1.5em;
+}
+
+.content .post--preview + .post--preview {
+    margin-top: 3em;
+}
+
+.post--preview .post__title {
+    margin-bottom: .25em;
+}
+
+.legal {
+    color: #77201C;
+    margin-top: 3em;
+    text-align: center;
+}
+
+.post__meta {
+    color: #52616D;
+    display: table;
+    font-style: italic;
+    width: 100%;
+}
+
+.post__meta a {
+    color: #52616D;
+}
+
+.post__meta a:hover {
+    color: #2C343B;
+}
+
+.post__meta a:focus {
+    color: #C44741;
+}
+
+.post__meta a:active {
+    color: #77201C;
+}
+
+.post__meta [class^=post__meta__] {
+    display: table-cell;
+    vertical-align: middle;
+    margin: 0;
+    padding-left: 0;
+    list-style-type: none;
+}
+
+.post__meta [class^=post__meta__] > * {
+    display: inline-block;
+}
+
+.post__meta [class^=post__meta__] li + li {
+    margin-left: .25em;
+}
+
+.post__meta [class^=post__meta__] li + li::before {
+    color: #52616D;
+    content: "•";
+    display: inline-block;
+    margin-right: 0.5em;
+}
+
+.post__meta .post__meta__infos {
+    text-align: left;
+}
+
+.post__meta .post__meta__tags {
+    text-align: right;
+}
+
+.pagination {
+    color: #52616D;
+    margin-top: 1.5em;
+    text-align: right;
+}
+
+.pagination .pagination__infos + a {
+    margin-left: .25em;
+}
+
+.pagination .pagination__current {
+    color: #C44741;
     font-size: 1.5em;
+}
+
+.pagination .pagination__infos + a::before {
+    color: #E5E1D1;
+    content: "•";
+    display: inline-block;
+    margin-right: 0.5em;
+}
+
+.pagination .pagination__prev + .pagination__next {
+    margin-left: .25em;
+}
+
+.pagination .pagination__prev + .pagination__next::before {
+    color: #E5E1D1;
+    content: "|";
+    display: inline-block;
+    margin-right: 0.5em;
 }
 
 html {
-    color: #333;
+    color: #2C343B;
     font-size: 1em;
+    font-variant-ligatures: common-ligatures;
+    text-rendering: optimizeLegibility;
 }
 
-.headlines__title {
+.template {
+    font-size: 1.25em;
+}
+
+.headline__title {
+    color: #C44741;
+    display: block;
+    font-family: Corbel, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", "Bitstream Vera Sans", "Liberation Sans", Verdana, "Verdana Ref", sans-serif;
     font-size: 1.5em;
+    font-weight: bold;
+    margin: 0;
+    padding: .5em 0;
 }
 
-.headlines__baseline {
-    font-size: 1em;
+h1, h3, h5 {
+    font-family: "Palatino Linotype", Palatino, Palladio, "URW Palladio L", "Book Antiqua", Baskerville, "Bookman Old Style", "Bitstream Charter", "Nimbus Roman No9 L", Garamond, "Apple Garamond", "ITC Garamond Narrow", "New Century Schoolbook", "Century Schoolbook", "Century Schoolbook L", Georgia, serif;
+    line-height: 1.2;
+    color: #C44741;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    font-family: Georgia, Times, Times New Roman, serif;
+h2, h4, h6 {
+    font-family: Corbel, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", "Bitstream Vera Sans", "Liberation Sans", Verdana, "Verdana Ref", sans-serif;
+    line-height: 1.2;
+    color: #52616D;
+}
+
+@media screen and (min-width: 40em) {
+    h1 {
+        font-size: 3em;
+    }
+    h2 {
+        font-size: 2.5em;
+    }
+    h3 {
+        font-size: 2em;
+    }
+    h4 {
+        font-size: 1.75em;
+    }
+    h5 {
+        font-size: 1.25em;
+    }
+    h6 {
+        font-size: 1em;
+    }
+}
+
+@media screen and (min-width: 60em) {
+    h1 {
+        font-size: 4.5em;
+    }
+    h2 {
+        font-size: 3em;
+    }
+    h3 {
+        font-size: 2.5em;
+    }
+    h4 {
+        font-size: 2em;
+    }
+    h5 {
+        font-size: 1.5em;
+    }
+    h6 {
+        font-size: 1em;
+    }
 }
 
 /*# sourceMappingURL=style.css.map */

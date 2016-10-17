@@ -1,15 +1,16 @@
 {{ partial "head" . }}
 
-<body class="home-template">
-    <div class="page">
+<body class="template template--home">
+    <section class="header-wrapper">
         {{ partial "header" . }}
         {{ partial "navigation" . }}
-        <main class="content" role="main" id="main-content">
-            {{ partial "post-list" . }}
-            {{ partial "pagination" . }}
-        </main>
-        {{ partial "footer" . }}
-    </div>
+    </section>
+    <main class="content" role="main" id="main-content">
+        <h1>Yay!</h1>
+        {{ partial "post-list" . }}
+        {{ partial "pagination" . }}
+    </main>
+    {{ partial "footer" . }}
     {{ partial "js" . }}
 </body>
 </html>

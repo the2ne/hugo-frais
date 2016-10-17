@@ -1,15 +1,15 @@
 {{ partial "head" . }}
-
-<body class="list-template">
-    <div class="page">
+<body class="template template--list">
+    <section class="header-wrapper">
         {{ partial "header" . }}
         {{ partial "navigation" . }}
-        <main class="content" role="main" id="contenu-principal">
-    		{{ partial "post-list" . }}
-            {{ partial "pagination" . }}
-        </main>
-        {{ partial "footer" . }}
-    </div>
+    </section>
+    <main class="content" role="main" id="main-content">
+        <h1>{{ .Title }}</h1>
+		{{ partial "post-list" . }}
+        {{ partial "pagination" . }}
+    </main>
+    {{ partial "footer" . }}
     {{ partial "js" . }}
 </body>
 </html>

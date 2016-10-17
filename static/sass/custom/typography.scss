@@ -3,18 +3,34 @@
 ////
 
 html {
-    color: $dark;
+    color: $base;
     font-size: $fontSize;
+    font-variant-ligatures: common-ligatures;
+    text-rendering: optimizeLegibility;
 }
 
-.headlines__title {
+.template {
+    font-size: $fontSize * 1.25;
+}
+
+.headline__title {
+    color: $contrast;
+    display: block;
+    font-family: $fontFamily;
     font-size: $fontSize * 1.5;
+    font-weight: bold;
+    margin: 0;
+    padding: .5em 0;
 }
 
-.headlines__baseline {
-    font-size: $fontSize;
-}
-
-h1, h2, h3, h4, h5, h6 {
+h1, h3, h5 {
     font-family: $fontFamilyAlternative;
+    line-height: $baseline - .3;
+    color: $contrast;
+}
+
+h2, h4, h6 {
+    font-family: $fontFamily;
+    line-height: $baseline - .3;
+    color: $light;
 }

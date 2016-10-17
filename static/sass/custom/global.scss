@@ -17,20 +17,30 @@ img { -ms-interpolation-mode: bicubic; }
 
 // Links
 
-a {
-  color: $light;
+a { color: $contrast; }
+a:hover { color: $shadow; }
+a:focus { color: $base; }
+a:active { color: $light; }
+
+// HTML elements
+
+blockquote {
+    @include _background-opacity($neutral, .3);
+    border-left: 6px solid $neutral;
+    font-size: $fontSize * 1.25;
+    margin-left: 0;
+    margin-right: 0;
+    padding: .5em 1.5em;
 }
 
-a:hover {
-  color: $dark;
-}
+code {
+    @include _background-opacity($contrast, .1);
+    border-left: 6px solid $contrast;
+    color: $contrast;
+    display: block;
+    margin: 1em 0;
+    padding: .5em 1.5em;
 
-a:focus {
-  color: $black;
-}
-
-a:active {
-  color: $dark;
 }
 
 // Helpers

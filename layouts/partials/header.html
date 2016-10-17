@@ -1,8 +1,7 @@
-<header class="headlines" role="banner">
-    <h1 class="headlines__title">
-        {{ if .IsPage }}<a href="{{ .Site.BaseURL }}">{{ end }}
-            {{ .Site.Params.headline }}
-        {{ if .IsPage }}</a>{{ end }}
-    </h1>
-    <h2 class="headlines__baseline">{{ .Site.Params.baseline }}</h2>
+<header class="headline" role="banner">
+    {{ if .IsHome }}
+        <span class="headline__title">{{ .Site.Params.headline }}</span>
+    {{ else }}
+        <a class="headline__title" href="{{ .Site.BaseURL }}">{{ .Site.Params.headline }}</a>
+    {{ end }}
 </header>

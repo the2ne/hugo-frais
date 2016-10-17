@@ -6,10 +6,143 @@ html {
     background-color: $white;
 }
 
-.page {
-    margin: 0 4em;
+
+// header
+.header-wrapper {
+    background-color: $neutral;
+    display: table;
+    padding: .5em 1.5em;
+    width: 100%;
+
+    a {
+        text-decoration: none;
+    }
+
+    .headline,
+    .menu {
+        display: table-cell;
+        vertical-align: middle;
+    }
+
+    .headline {
+        text-align: left;
+    }
+
+    .menu {
+        text-align: right;
+    }
 }
 
-.headlines {
-    font-size: 1.5em;
+// Menu
+.menu__items {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+    .item {
+        display: inline-block;
+    }
+
+    .item + .item {
+        margin-left: .5em;
+    }
+
+    .item + .item::before {
+        @include  _separator-before($white, "|");
+    }
+}
+
+// Content
+.content {
+    margin: 0 auto;
+    max-width: 40em;
+    padding: 0 1.5em;
+
+    .post--preview + .post--preview {
+        margin-top: 3em;
+    }
+}
+
+// Post preview
+.post--preview {
+    .post__title {
+        margin-bottom: .25em;
+    }
+}
+
+// Footer
+.legal {
+    color: $shadow;
+    margin-top: 3em;
+    text-align: center;
+}
+
+// Post meta
+.post__meta {
+    color: $light;
+    display: table;
+    font-style: italic;
+    width: 100%;
+
+    a { color: $light; }
+    a:hover { color: $base; }
+    a:focus { color: $contrast; }
+    a:active { color: $shadow; }
+
+    [class^=post__meta__] {
+        display: table-cell;
+        vertical-align: middle;
+        margin: 0;
+        padding-left: 0;
+        list-style-type: none;
+
+        > * {
+            display: inline-block;
+        }
+
+        li + li {
+            margin-left: .25em;
+        }
+
+        li + li::before {
+            @include  _separator-before($light);
+        }
+    }
+
+    .post__meta__infos {
+        text-align: left;
+    }
+
+    .post__meta__tags {
+        text-align: right;
+    }
+}
+
+
+// Pagination
+.pagination {
+    color: $light;
+    margin-top: 1.5em;
+    text-align: right;
+
+    .pagination__infos + a {
+        margin-left: .25em;
+    }
+
+    .pagination__current {
+        color: $contrast;
+        font-size: $fontSize * 1.5;
+    }
+
+    .pagination__infos + a::before {
+        @include  _separator-before($neutral);
+    }
+
+    .pagination__prev + .pagination__next {
+        margin-left: .25em;
+    }
+
+    .pagination__prev + .pagination__next::before {
+        @include  _separator-before($neutral, "|");
+    }
 }

@@ -1,17 +1,6 @@
 # Hugo frais
 
-**/!\ Please note that this is a Work In Progress theme**
-
-A fresh (and french) theme for [Hugo](//gohugo.io/).
-
-Recipe for a good theme:
-- **light**: minimum viable dependencies
-- **responsive**: mobile-first is not an option
-- **accessible**: a11y is quality
-- **SVG**: light + responsive + accessibility = Epic win
-- **consistent**: if maintainability is king, BEM is queen
-- **customizable**: make it yours
-- ...
+A fresh and french single column theme for [Hugo](//gohugo.io/).
 
 ## How to install
 
@@ -34,11 +23,14 @@ For more information read the official [setup guide](//gohugo.io/overview/instal
 ## Configuration
 
 You can define some social network bullshit like:
+
 - [params] **author** *str* : the author's website name;
 - [params] **pseudo** *str* : the author's online pseudonym;
 - [params] **twitter** *str* : Twitter account;
 - [params] **github** *str* : GitHub account;
 - [params] **linkedin** *str* : LinkedIn account;
+
+This will activate meta (OpenGraph and Twitter Card) and menu item.
 
 _./config.toml example:_
 ```toml
