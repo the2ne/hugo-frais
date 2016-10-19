@@ -15,11 +15,5 @@
             {{ end }}
         </ul>
     </footer>
-    <section class="post__excerpt">
-        <p>{{ .Summary }}&hellip;</p>
-        {{ if .Truncated }}
-        <p class="readmore"><a href="{{ .Permalink }}">Read More…</a></p>
-        {{ end }}
-    </section>
 </article>
 {{ end }}
