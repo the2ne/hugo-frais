@@ -480,29 +480,13 @@ html {
     background-color: #FFFFFF;
 }
 
-.header-wrapper {
+.header-wrapper .headline {
     background-color: #E5E1D1;
-    display: table;
     padding: .5em 1.5em;
-    width: 100%;
 }
 
 .header-wrapper a {
     text-decoration: none;
-}
-
-.header-wrapper .headline,
-.header-wrapper .menu {
-    display: table-cell;
-    vertical-align: middle;
-}
-
-.header-wrapper .headline {
-    text-align: left;
-}
-
-.header-wrapper .menu {
-    text-align: right;
 }
 
 .menu__items {
@@ -511,19 +495,16 @@ html {
     padding: 0;
 }
 
-.menu__items .item {
-    display: inline-block;
+.menu__items a {
+    background-color: #C44741;
+    color: #E5E1D1;
+    display: block;
+    padding: .5em 1.5em;
+    text-decoration: none;
 }
 
-.menu__items .item + .item {
-    margin-left: .5em;
-}
-
-.menu__items .item + .item::before {
-    color: #FFFFFF;
-    content: "|";
-    display: inline-block;
-    margin-right: 0.5em;
+.menu__items a:hover {
+    background-color: #77201C;
 }
 
 .content {
@@ -705,6 +686,54 @@ h2, h4, h6 {
     }
     h6 {
         font-size: 1em;
+    }
+    .header-wrapper {
+        background-color: #E5E1D1;
+        display: table;
+        padding: .5em 1.5em;
+        width: 100%;
+    }
+    .header-wrapper .headline {
+        padding: 0;
+    }
+    .header-wrapper .headline,
+    .header-wrapper .menu {
+        display: table-cell;
+        vertical-align: middle;
+    }
+    .header-wrapper .headline {
+        text-align: left;
+    }
+    .header-wrapper .menu {
+        text-align: right;
+    }
+    .menu__items {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+    .menu__items li {
+        display: inline-block;
+    }
+    .menu__items li + li {
+        margin-left: .5em;
+    }
+    .menu__items li + li::before {
+        color: #FFFFFF;
+        content: "|";
+        display: inline-block;
+        margin-right: 0.5em;
+    }
+    .menu__items a {
+        background-color: transparent;
+        color: #C44741;
+        display: inline;
+        padding: 0;
+        text-decoration: none;
+    }
+    .menu__items a:hover {
+        background-color: transparent;
+        color: #77201C;
     }
 }
 

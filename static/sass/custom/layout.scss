@@ -9,27 +9,12 @@ html {
 
 // header
 .header-wrapper {
-    background-color: $neutral;
-    display: table;
-    padding: .5em 1.5em;
-    width: 100%;
-
+    .headline {
+        background-color: $neutral;
+        padding: .5em 1.5em;
+    }
     a {
         text-decoration: none;
-    }
-
-    .headline,
-    .menu {
-        display: table-cell;
-        vertical-align: middle;
-    }
-
-    .headline {
-        text-align: left;
-    }
-
-    .menu {
-        text-align: right;
     }
 }
 
@@ -39,18 +24,20 @@ html {
     margin: 0;
     padding: 0;
 
-    .item {
-        display: inline-block;
+    a {
+        background-color: $contrast;
+        color: $neutral;
+        display: block;
+        padding: .5em 1.5em;
+        text-decoration: none;
     }
 
-    .item + .item {
-        margin-left: .5em;
-    }
+    a:hover {
+        background-color: $shadow;
 
-    .item + .item::before {
-        @include  _separator-before($white, "|");
     }
 }
+
 
 // Content
 .content {

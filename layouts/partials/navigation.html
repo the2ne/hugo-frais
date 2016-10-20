@@ -2,21 +2,21 @@
     <ul class="menu__items">
         {{ if .Site.Menus.main }}
         {{ range .Site.Menus.main }}
-        <li class="item"><a href="{{.URL}}">{{ .Name }}</a></li>
+        <li><a href="{{.URL}}">{{ .Name }}</a></li>
         {{ end }}
         {{ end }}
         {{ if .Site.Params.twitter }}
-        <li class="item twitter">
+        <li class="twitter">
             <a href="https://twitter.com/{{ .Site.Params.twitter }}" title="Follow me">Twitter</a>
         </li>
         {{ end }}
         {{ if .Site.Params.github }}
-        <li class="item github">
+        <li class="github">
             <a href="https://github.com/{{ .Site.Params.github }}" title="Fork me">GitHub</a>
         </li>
         {{ end }}
         {{ if .Site.Params.linkedin }}
-        <li class="item linkedin">
+        <li class="linkedin">
             <a href="https://fr.linkedin.com/in/{{ .Site.Params.linkedin }}" title="About me">LinkedIn</a>
         </li>
         {{ end }}
