@@ -4,86 +4,10 @@
 
 // Medium breakpoint
 @media screen and (min-width: 40em) {
-    h1 { font-size: $fontSize * 3; }
-    h2 { font-size: $fontSize * 2.5; }
-    h3 { font-size: $fontSize * 2; }
-    h4 { font-size: $fontSize * 1.75; }
-    h5 { font-size: $fontSize * 1.25; }
-    h6 { font-size: $fontSize * 1; }
 
 }
 
 // Desktop breakpoint
 @media screen and (min-width: 60em) {
-    h1 { font-size: $fontSize * 4.5; }
-    h2 { font-size: $fontSize * 3; }
-    h3 { font-size: $fontSize * 2.5; }
-    h4 { font-size: $fontSize * 2; }
-    h5 { font-size: $fontSize * 1.5; }
-    h6 { font-size: $fontSize * 1; }
 
-    // header
-    .header-wrapper {
-        background-color: $neutral;
-        display: table;
-        padding: .5em 1.5em;
-        width: 100%;
-        .headline {
-            padding: 0;
-        }
-
-        .headline,
-        .menu {
-            display: table-cell;
-            vertical-align: middle;
-        }
-
-        .headline {
-            text-align: left;
-        }
-
-        .menu {
-            text-align: right;
-        }
-    }
-
-    // Menu
-    .menu {
-
-        label {
-            display: none;
-        }
-
-        .menu__items {
-            display: block;
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-
-            li {
-                display: inline-block;
-            }
-
-            li + li {
-                margin-left: .5em;
-            }
-
-            li + li::before {
-                @include  _separator-before($white, "|");
-            }
-
-            a {
-                background-color: transparent;
-                color: $contrast;
-                display: inline;
-                padding: 0;
-                text-decoration: none;
-            }
-
-            a:hover {
-                background-color: transparent;
-                color: $shadow;
-            }
-        }
-    }
 }

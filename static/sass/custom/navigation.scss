@@ -1,0 +1,85 @@
+////
+/// Navigation
+////
+
+.menu {
+    input[type=checkbox] {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+
+    label {
+        // a like
+        cursor: pointer;
+        user-select: none;
+        // Custom
+        color: $contrast;
+        line-height: 1;
+        text-transform: uppercase;
+        position: absolute;
+        top: 1.5em; right: 1.5em;
+    }
+
+    label:hover {
+        color: $shadow;
+    }
+
+    label:before {
+        color: $white;
+        content: "\2261";
+        display: inline-block;
+        font-size: $fontSize * 1.5;
+        font-weight: bold;
+        margin-right: .25em;
+    }
+
+    .menu__items {
+        display: none;
+    }
+
+    input:checked ~ .menu__items {
+        display: block;
+    }
+}
+
+// Desktop breakpoint
+@media screen and (min-width: 60em) {
+    .menu {
+        label {
+            display: none;
+        }
+
+        .menu__items {
+            display: block;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+
+            li {
+                display: inline-block;
+            }
+
+            li + li {
+                margin-left: .5em;
+            }
+
+            li + li::before {
+                @include  _separator-before($white, "|");
+            }
+
+            a {
+                background-color: transparent;
+                color: $contrast;
+                display: inline;
+                padding: 0;
+                text-decoration: none;
+            }
+
+            a:hover {
+                background-color: transparent;
+                color: $shadow;
+            }
+        }
+    }
+}

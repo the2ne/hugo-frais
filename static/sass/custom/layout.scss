@@ -13,6 +13,7 @@ html {
         background-color: $neutral;
         padding: .5em 1.5em;
     }
+
     a {
         text-decoration: none;
     }
@@ -34,7 +35,6 @@ html {
 
     a:hover {
         background-color: $shadow;
-
     }
 }
 
@@ -131,5 +131,34 @@ html {
 
     .pagination__prev + .pagination__next::before {
         @include  _separator-before($neutral, "|");
+    }
+}
+
+// Desktop breakpoint
+@media screen and (min-width: 60em) {
+    // header
+    .header-wrapper {
+        background-color: $neutral;
+        display: table;
+        padding: .5em 1.5em;
+        width: 100%;
+        
+        .headline {
+            padding: 0;
+        }
+
+        .headline,
+        .menu {
+            display: table-cell;
+            vertical-align: middle;
+        }
+
+        .headline {
+            text-align: left;
+        }
+
+        .menu {
+            text-align: right;
+        }
     }
 }

@@ -425,6 +425,32 @@ img {
     -ms-interpolation-mode: bicubic;
 }
 
+body {
+    -webkit-animation: bugfix infinite 1s;
+}
+
+@-webkit-keyframes bugfix {
+    from {
+        padding: 0;
+    }
+    to {
+        padding: 0;
+    }
+}
+
+.visua11y-hidden {
+    border: 0;
+    clip: rect(1px 1px 1px 1px);
+    /* for Internet Explorer */
+    clip: rect(1px, 1px, 1px, 1px);
+    height: 1px;
+    width: 1px;
+    margin: -1px;
+    padding: 0;
+    position: absolute;
+    overflow: hidden;
+}
+
 a {
     color: #C44741;
 }
@@ -461,70 +487,6 @@ code {
     display: block;
     margin: 1em 0;
     padding: .5em 1.5em;
-}
-
-.visua11y-hidden {
-    border: 0;
-    clip: rect(1px 1px 1px 1px);
-    /* for Internet Explorer */
-    clip: rect(1px, 1px, 1px, 1px);
-    height: 1px;
-    width: 1px;
-    margin: -1px;
-    padding: 0;
-    position: absolute;
-    overflow: hidden;
-}
-
-body {
-    -webkit-animation: bugfix infinite 1s;
-}
-
-@-webkit-keyframes bugfix {
-    from {
-        padding: 0;
-    }
-    to {
-        padding: 0;
-    }
-}
-
-.menu input[type=checkbox] {
-    position: absolute;
-    top: -9999px;
-    left: -9999px;
-}
-
-.menu label {
-    cursor: pointer;
-    user-select: none;
-    color: #C44741;
-    line-height: 1;
-    text-transform: uppercase;
-    position: absolute;
-    top: 1.5em;
-    right: 1.5em;
-}
-
-.menu label:hover {
-    color: #77201C;
-}
-
-.menu label:before {
-    color: #FFFFFF;
-    content: "\2261";
-    display: inline-block;
-    font-size: 1.5em;
-    font-weight: bold;
-    margin-right: .25em;
-}
-
-.menu .menu__items {
-    display: none;
-}
-
-.menu input:checked ~ .menu__items {
-    display: block;
 }
 
 html {
@@ -665,6 +627,102 @@ html {
     margin-right: 0.5em;
 }
 
+@media screen and (min-width: 60em) {
+    .header-wrapper {
+        background-color: #E5E1D1;
+        display: table;
+        padding: .5em 1.5em;
+        width: 100%;
+    }
+    .header-wrapper .headline {
+        padding: 0;
+    }
+    .header-wrapper .headline,
+    .header-wrapper .menu {
+        display: table-cell;
+        vertical-align: middle;
+    }
+    .header-wrapper .headline {
+        text-align: left;
+    }
+    .header-wrapper .menu {
+        text-align: right;
+    }
+}
+
+.menu input[type=checkbox] {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+}
+
+.menu label {
+    cursor: pointer;
+    user-select: none;
+    color: #C44741;
+    line-height: 1;
+    text-transform: uppercase;
+    position: absolute;
+    top: 1.5em;
+    right: 1.5em;
+}
+
+.menu label:hover {
+    color: #77201C;
+}
+
+.menu label:before {
+    color: #FFFFFF;
+    content: "\2261";
+    display: inline-block;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-right: .25em;
+}
+
+.menu .menu__items {
+    display: none;
+}
+
+.menu input:checked ~ .menu__items {
+    display: block;
+}
+
+@media screen and (min-width: 60em) {
+    .menu label {
+        display: none;
+    }
+    .menu .menu__items {
+        display: block;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+    .menu .menu__items li {
+        display: inline-block;
+    }
+    .menu .menu__items li + li {
+        margin-left: .5em;
+    }
+    .menu .menu__items li + li::before {
+        color: #FFFFFF;
+        content: "|";
+        display: inline-block;
+        margin-right: 0.5em;
+    }
+    .menu .menu__items a {
+        background-color: transparent;
+        color: #C44741;
+        display: inline;
+        padding: 0;
+        text-decoration: none;
+    }
+    .menu .menu__items a:hover {
+        background-color: transparent;
+        color: #77201C;
+    }
+}
+
 html {
     color: #2C343B;
     font-size: 1em;
@@ -737,58 +795,6 @@ h2, h4, h6 {
     }
     h6 {
         font-size: 1em;
-    }
-    .header-wrapper {
-        background-color: #E5E1D1;
-        display: table;
-        padding: .5em 1.5em;
-        width: 100%;
-    }
-    .header-wrapper .headline {
-        padding: 0;
-    }
-    .header-wrapper .headline,
-    .header-wrapper .menu {
-        display: table-cell;
-        vertical-align: middle;
-    }
-    .header-wrapper .headline {
-        text-align: left;
-    }
-    .header-wrapper .menu {
-        text-align: right;
-    }
-    .menu label {
-        display: none;
-    }
-    .menu .menu__items {
-        display: block;
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-    }
-    .menu .menu__items li {
-        display: inline-block;
-    }
-    .menu .menu__items li + li {
-        margin-left: .5em;
-    }
-    .menu .menu__items li + li::before {
-        color: #FFFFFF;
-        content: "|";
-        display: inline-block;
-        margin-right: 0.5em;
-    }
-    .menu .menu__items a {
-        background-color: transparent;
-        color: #C44741;
-        display: inline;
-        padding: 0;
-        text-decoration: none;
-    }
-    .menu .menu__items a:hover {
-        background-color: transparent;
-        color: #77201C;
     }
 }
 
