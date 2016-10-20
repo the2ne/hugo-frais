@@ -13,7 +13,27 @@
 
 img { -ms-interpolation-mode: bicubic; }
 
+// Fix for Android
+body {
+    -webkit-animation: bugfix infinite 1s;
+}
 
+@-webkit-keyframes bugfix {
+    from { padding: 0; }
+    to { padding: 0; }
+}
+
+// Helpers
+
+.visua11y-hidden {
+    border: 0;
+    clip: rect(1px 1px 1px 1px); /* for Internet Explorer */
+    clip: rect(1px, 1px, 1px, 1px);
+    height: 1px; width: 1px;
+    margin: -1px; padding: 0;
+    position: absolute;
+    overflow: hidden;
+}
 
 // Links
 
@@ -41,16 +61,4 @@ code {
     margin: 1em 0;
     padding: .5em 1.5em;
 
-}
-
-// Helpers
-
-.visua11y-hidden {
-    border: 0;
-    clip: rect(1px 1px 1px 1px); /* for Internet Explorer */
-    clip: rect(1px, 1px, 1px, 1px);
-    height: 1px; width: 1px;
-    margin: -1px; padding: 0;
-    position: absolute;
-    overflow: hidden;
 }
