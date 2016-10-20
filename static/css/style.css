@@ -476,6 +476,57 @@ code {
     overflow: hidden;
 }
 
+body {
+    -webkit-animation: bugfix infinite 1s;
+}
+
+@-webkit-keyframes bugfix {
+    from {
+        padding: 0;
+    }
+    to {
+        padding: 0;
+    }
+}
+
+.menu input[type=checkbox] {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+}
+
+.menu label {
+    cursor: pointer;
+    user-select: none;
+    color: #C44741;
+    line-height: 1;
+    text-transform: uppercase;
+    position: absolute;
+    top: 1.5em;
+    right: 1.5em;
+}
+
+.menu label:hover {
+    color: #77201C;
+}
+
+.menu label:before {
+    color: #FFFFFF;
+    content: "\2261";
+    display: inline-block;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-right: .25em;
+}
+
+.menu .menu__items {
+    display: none;
+}
+
+.menu input:checked ~ .menu__items {
+    display: block;
+}
+
 html {
     background-color: #FFFFFF;
 }
@@ -627,7 +678,7 @@ html {
 
 .headline__title {
     color: #C44741;
-    display: block;
+    display: inline-block;
     font-family: Corbel, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", "Bitstream Vera Sans", "Liberation Sans", Verdana, "Verdana Ref", sans-serif;
     font-size: 1.5em;
     font-weight: bold;
@@ -707,31 +758,35 @@ h2, h4, h6 {
     .header-wrapper .menu {
         text-align: right;
     }
-    .menu__items {
+    .menu label {
+        display: none;
+    }
+    .menu .menu__items {
+        display: block;
         list-style-type: none;
         margin: 0;
         padding: 0;
     }
-    .menu__items li {
+    .menu .menu__items li {
         display: inline-block;
     }
-    .menu__items li + li {
+    .menu .menu__items li + li {
         margin-left: .5em;
     }
-    .menu__items li + li::before {
+    .menu .menu__items li + li::before {
         color: #FFFFFF;
         content: "|";
         display: inline-block;
         margin-right: 0.5em;
     }
-    .menu__items a {
+    .menu .menu__items a {
         background-color: transparent;
         color: #C44741;
         display: inline;
         padding: 0;
         text-decoration: none;
     }
-    .menu__items a:hover {
+    .menu .menu__items a:hover {
         background-color: transparent;
         color: #77201C;
     }

@@ -48,34 +48,42 @@
     }
 
     // Menu
-    .menu__items {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
+    .menu {
 
-        li {
-            display: inline-block;
+        label {
+            display: none;
         }
 
-        li + li {
-            margin-left: .5em;
-        }
-
-        li + li::before {
-            @include  _separator-before($white, "|");
-        }
-
-        a {
-            background-color: transparent;
-            color: $contrast;
-            display: inline;
+        .menu__items {
+            display: block;
+            list-style-type: none;
+            margin: 0;
             padding: 0;
-            text-decoration: none;
-        }
 
-        a:hover {
-            background-color: transparent;
-            color: $shadow;
+            li {
+                display: inline-block;
+            }
+
+            li + li {
+                margin-left: .5em;
+            }
+
+            li + li::before {
+                @include  _separator-before($white, "|");
+            }
+
+            a {
+                background-color: transparent;
+                color: $contrast;
+                display: inline;
+                padding: 0;
+                text-decoration: none;
+            }
+
+            a:hover {
+                background-color: transparent;
+                color: $shadow;
+            }
         }
     }
 }

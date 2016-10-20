@@ -1,4 +1,6 @@
 <nav class="menu" role="navigation" id="main-menu">
+    <input type="checkbox" id="menu">
+    <label for="menu" onclick>Menu</label>
     <ul class="menu__items">
         {{ if .Site.Menus.main }}
         {{ range .Site.Menus.main }}

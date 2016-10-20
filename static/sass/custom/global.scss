@@ -54,3 +54,54 @@ code {
     position: absolute;
     overflow: hidden;
 }
+
+// Nav
+// Fix for Android
+body {
+    -webkit-animation: bugfix infinite 1s;
+}
+
+@-webkit-keyframes bugfix {
+    from { padding: 0; }
+    to { padding: 0; }
+}
+
+.menu {
+    input[type=checkbox] {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+
+    label {
+        cursor: pointer;
+        user-select: none;
+
+        color: $contrast;
+        line-height: 1;
+        text-transform: uppercase;
+        position: absolute;
+        top: 1.5em; right: 1.5em;
+    }
+
+    label:hover {
+        color: $shadow;
+    }
+
+    label:before {
+        color: $white;
+        content: "\2261";
+        display: inline-block;
+        font-size: $fontSize * 1.5;
+        font-weight: bold;
+        margin-right: .25em;
+    }
+
+    .menu__items {
+        display: none;
+    }
+
+    input:checked ~ .menu__items {
+        display: block;
+    }
+}
