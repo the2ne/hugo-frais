@@ -1,5 +1,5 @@
 {
-	"name": "Olivier Fredon",
+	"name": "Hugo Frais",
 	"icons": [
 		{
 			"src": "\/img\/android-chrome-192x192.png",
@@ -7,6 +7,6 @@
 			"type": "image\/png"
 		}
 	],
-	"theme_color": "#333333",
+	"theme_color": "#C54741",
 	"display": "standalone"
 }
