@@ -2,7 +2,7 @@
 
 A fresh and french single column theme for [Hugo](//gohugo.io/).
 
-![Screenshot](//github.com/the2ne/hugo-frais/images/tn.png)
+![Screenshot](https://github.com/the2ne/hugo-frais/blob/master/images/tn.png)
 
 ## How to install
 
