@@ -2,6 +2,8 @@
 
 A fresh and french single column theme for [Hugo](//gohugo.io/).
 
+![Screenshot](//github.com/the2ne/hugo-frais/images/tn.png)
+
 ## How to install
 
 Inside the folder of your Hugo site run:
@@ -22,7 +24,7 @@ For more information read the official [setup guide](//gohugo.io/overview/instal
 
 ## Configuration
 
-You can define some social network bullshit like:
+You can define some social network like:
 
 - [params] **author** *str* : the author's website name;
 - [params] **pseudo** *str* : the author's online pseudonym;

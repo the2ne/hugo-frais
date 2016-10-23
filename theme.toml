@@ -1,8 +1,12 @@
-author = "Olivier Fredon"
 name = "Hugo frais"
-description = "A fresh and french theme"
+description = "A fresh and french theme for Hugo"
 license = "MIT"
-licenselink = "https://github.com/the2ne/hugo-frais/blob/master/LICENSE.md"
-version = "0.0.0"
-source_repo = "https://github.com/the2ne/hugo-frais"
-tags = ["blog", "portfolio", "responsive"]
+licenselink = "//github.com/the2ne/hugo-frais/blob/master/LICENSE.md"
+homepage = "//github.com/the2ne/hugo-frais"
+tags = ["blog", "minimal", "responsive"]
+features = ["social", "meta", "twitter card", "facebook og"]
+min_version = 0.16
+
+[author]
+  name = "Olivier Fredon"
+  homepage = "//github.com/the2ne"
