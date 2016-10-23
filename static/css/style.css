@@ -542,9 +542,7 @@ html {
 
 .post__meta {
     color: #52616D;
-    display: table;
     font-style: italic;
-    width: 100%;
 }
 
 .post__meta a {
@@ -564,9 +562,7 @@ html {
 }
 
 .post__meta [class^=post__meta__] {
-    display: table-cell;
-    vertical-align: middle;
-    margin: 0;
+    margin: .25em 0 0;
     padding-left: 0;
     list-style-type: none;
 }
@@ -586,12 +582,28 @@ html {
     margin-right: 0.5em;
 }
 
-.post__meta .post__meta__infos {
-    text-align: left;
+.post__meta [class^=post__meta__] .tags + .categories::before {
+    color: #E5E1D1;
+    content: "|";
+    display: inline-block;
+    margin-right: 0.5em;
 }
 
-.post__meta .post__meta__taxonomies {
-    text-align: right;
+@media screen and (min-width: 60em) {
+    .post__meta {
+        display: table;
+        width: 100%;
+    }
+    .post__meta [class^=post__meta__] {
+        display: table-cell;
+        vertical-align: middle;
+    }
+    .post__meta .post__meta__infos {
+        text-align: left;
+    }
+    .post__meta .post__meta__taxonomies {
+        text-align: right;
+    }
 }
 
 .pagination {
