@@ -67,9 +67,7 @@ html {
 // Post meta
 .post__meta {
     color: $light;
-    display: table;
     font-style: italic;
-    width: 100%;
 
     a { color: $light; }
     a:hover { color: $base; }
@@ -77,9 +75,7 @@ html {
     a:active { color: $shadow; }
 
     [class^=post__meta__] {
-        display: table-cell;
-        vertical-align: middle;
-        margin: 0;
+        margin: .25em 0 0;
         padding-left: 0;
         list-style-type: none;
 
@@ -94,16 +90,34 @@ html {
         li + li::before {
             @include  _separator-before($light);
         }
-    }
 
-    .post__meta__infos {
-        text-align: left;
-    }
-
-    .post__meta__tags {
-        text-align: right;
+        .tags + .categories::before {
+            @include  _separator-before($neutral, "|");
+        }
     }
 }
+
+// Desktop breakpoint
+@media screen and (min-width: 60em) {
+    .post__meta {
+        display: table;
+        width: 100%;
+
+        [class^=post__meta__] {
+            display: table-cell;
+            vertical-align: middle;
+        }
+
+        .post__meta__infos {
+            text-align: left;
+        }
+
+        .post__meta__taxonomies {
+            text-align: right;
+        }
+    }
+}
+
 
 
 // Pagination
@@ -142,7 +156,7 @@ html {
         display: table;
         padding: .5em 1.5em;
         width: 100%;
-        
+
         .headline {
             padding: 0;
         }
