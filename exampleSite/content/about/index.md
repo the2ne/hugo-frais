@@ -37,7 +37,7 @@ You can define some social network like:
 - [params] **github** *str* : GitHub account;
 - [params] **linkedin** *str* : LinkedIn account;
 
-This will activate meta (OpenGraph and Twitter Card) and menu item.
+This will activate menu items and meta Twitter Card.
 
 _./config.toml example:_
 ```toml
