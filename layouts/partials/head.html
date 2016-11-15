@@ -7,6 +7,7 @@
     {{ partial "meta_opengraph.html" . }}
     {{ partial "meta_twittercard.html" . }}
     <base href="{{ .Site.BaseURL }}">
+    {{ .Hugo.Generator }}
     <link rel="canonical" href="{{ .Permalink }}">
     {{ if .RSSlink }}<link href="{{ .RSSlink }}" rel="alternate" type="application/rss+xml" title="{{ .Title }}" />{{ end }}
     {{ partial "head_includes.html" . }}

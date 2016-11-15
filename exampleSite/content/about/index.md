@@ -1,3 +1,8 @@
++++
+title = "About Hugo Frais"
+description = "Hugo Frais, a fresh and french themefor Hugo by Olivier Fredon"
+date = "2016-11-10T11:27:27-04:00"
++++
 # Hugo frais
 
 A fresh and french single column theme for [Hugo](//gohugo.io/).
