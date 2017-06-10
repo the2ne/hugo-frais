@@ -44,6 +44,12 @@ _./config.toml example:_
     linkedin = "the2ne"
 ```
 
+You can also configure the headline of the index page:
+```toml
+[params]
+	  indexHeadline = "This just in:"
+```
+which will substitute the "Yay!" in the default page.
 
 ## Contributing
 
