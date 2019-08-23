@@ -7,7 +7,7 @@
     </section>
     <main class="content" role="main" id="main-content">
         <h1>{{ .Site.Params.indexHeadline | default "Yay!" }}</h1>
-        {{ $paginator := .Paginate (where .Data.Pages.ByDate.Reverse "Type" "post") 3 }}
+        {{ $paginator := .Paginate (where .Site.RegularPages.ByDate.Reverse "Type" "in" site.Params.mainSections) 3 }}
         {{ range $paginator.Pages }}
         <article class="post post--preview">
             <header>

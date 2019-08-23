@@ -12,6 +12,7 @@ theme = "hugo-frais"
     linkedin = "the2ne"
     headline = "Hugo Frais"
     description = "This is the sites description, which will be found in the meta tags."
+    mainSections = ["blog", "post"]
 
 [taxonomies]
     category = "categories"
