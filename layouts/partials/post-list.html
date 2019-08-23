@@ -1,4 +1,4 @@
-{{ $paginator := .Paginate (where .Site.RegularPages.ByDate.Reverse "Type" "post") }}
+{{ $paginator := .Paginate (where .Site.RegularPages.ByDate.Reverse "Type" "in" site.Params.mainSections) }}
 {{ range $paginator.Pages }}
 <article class="post post--preview">
     <header>
